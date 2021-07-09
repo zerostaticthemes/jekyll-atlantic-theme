@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+    "image": "https://simpleicons.org/icons/github.svg"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/zerostaticio",
+    "image": "https://simpleicons.org/icons/twitter.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "",
+    "image": "https://simpleicons.org/icons/facebook.svg"
+  },
+  {
+    "name": "Linkedin",
+    "link": "",
+    "image": "https://simpleicons.org/icons/linkedin.svg"
+  },
+  {
+    "name": "Youtube",
+    "link": "",
+    "image": "https://simpleicons.org/icons/youtube.svg"
+  }
+]

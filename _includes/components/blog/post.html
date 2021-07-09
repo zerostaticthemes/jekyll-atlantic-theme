@@ -1,0 +1,40 @@
+<div class="flex flex-col md:flex-row">
+  {% if post.thumbnail %}
+  <div class="md:w-3/12 md:mr-4 mb-2 md:mb-0">
+    <a class="bg-gray-100" href="{{ post.url | relative_url }}"><img class="bg-gray-100 rounded"
+        alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}" /></a>
+  </div>
+  {% endif %}
+
+  <div class="flex-1">
+    <div class="text-sm text-gray-800">{{ post.date | date_to_long_string }}</div>
+
+    <a href="{{ post.url | relative_url  }}" class="hover:text-green-500">
+      <h2 class="text-2xl font-semibold mb-1">{{ post.title }}</h2>
+    </a>
+
+    <p class="text-base md:text-xl font-light text-gray-600 mb-4">{{ post.description }}</p>
+
+    {% if post.categories %}
+    <div class="mb-2">
+      {% for cats in post.categories %}
+      <a class="p-1 px-3 mr-1 text-xs font-mono rounded bg-gray-300 bg-green-200 text-green-800 hover:bg-blue-200 hover:text-blue-800"
+        href="{{ " /categories/" | relative_url }}{{ cats | urlize }}">{{ cats }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if post.authors %}
+    <div class="relative h-8">
+      {% for author in post.authors %}
+      {% assign author_name = author | replace: " ", "_" | downcase %}
+      {% assign author_profile = site.data.authors[author_name] %}
+      <div class="absolute" style="position: absolute; left: {{ forloop.index | times:15 | minus:15 }}px;">
+        <img class="border-2 border-white rounded-full filter grayscale hover:grayscale-0" height="32" width="32"
+          src="{{ author_profile.image | relative_url }}" />
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

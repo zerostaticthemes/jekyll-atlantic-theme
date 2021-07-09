@@ -1,0 +1,25 @@
+baseurl: '/'
+permalink: pretty
+title: 'Jekyll Atlantic'
+
+google_analytics_id: ""
+
+logo:
+  text_mobile: ""
+  image_mobile: "images/logo/logo-mobile.svg"
+  text_desktop: "Jekyll Atlantic"
+  image_desktop: "images/logo/logo.svg"
+  desktop_height: "36px"
+
+plugins:
+  - jekyll-environment-variables
+  - jekyll-postcss
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - LICENSE.md
+  - LICENSE
+  - README.md
