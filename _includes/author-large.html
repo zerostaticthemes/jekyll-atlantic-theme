@@ -1,0 +1,12 @@
+{% assign author_name = include.author | replace: " ", "_" | downcase %}
+{% assign author_object = site.data.authors[author_name] %}
+
+<div class="flex items-center mb-3">
+  {% if author_object.image %}
+    <img class="h-12 w-12 rounded-full border-white border-2" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
+  {% endif %}
+  <div>
+    <span class="font-medium text-sm ml-1 block">{{ author_object.name }}</span>
+    <a class="text-sm ml-1 block text-green-400" href="https://www.twitter.com/{{ author_object.twitter }}">{{ author_object.twitter }}</a>
+  </div>
+</div>

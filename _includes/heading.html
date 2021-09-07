@@ -1,11 +1,16 @@
 {% assign heading = include.heading %}
 {% assign description = include.description %}
 {% assign align = include.align %}
+{% assign date = include.date %}
 
-<div class="{% if align == "center" %}text-center{% endif %} py-16 lg:w-10/12 mx-auto">
-
+<div class="{% if align == "center" %}text-center mx-auto{% endif %} py-16 lg:w-10/12">
+  {% if date %}
+    <div class="text font-semibold text-blue-500">{{ page.date | date_to_long_string }}</div>
+  {% endif %}
   <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">
     {{ heading }}
   </h1>
-  <h2 class="text-xl text-gray-500 mt-2">{{ description }}</h2>
+  {% if description %}
+    <h2 class="text-xl text-gray-500 mt-2">{{ description }}</h2>
+  {% endif %}
 </div>

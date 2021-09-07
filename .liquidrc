@@ -17,9 +17,8 @@
     }
   ],
   "html": {
-    "correct": false,
+    "correct": true,
     "force_attribute": false,
-    "braces": false,
     "preserve": 2,
     "unformatted": false
   },
@@ -47,8 +46,9 @@
   },
   "json": {
     "preserve": 0,
-    "braces": false,
-    "brace_block": true,
-    "no_semicolon": true
+    "format_array": "indent",
+    "braces": true,
+    "no_semicolon": true,
+    "brace_block": false
   }
 }
