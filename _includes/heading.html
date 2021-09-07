@@ -1,0 +1,11 @@
+{% assign heading = include.heading %}
+{% assign description = include.description %}
+{% assign align = include.align %}
+
+<div class="{% if align == "center" %}text-center{% endif %} py-16 lg:w-10/12 mx-auto">
+
+  <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">
+    {{ heading }}
+  </h1>
+  <h2 class="text-xl text-gray-500 mt-2">{{ description }}</h2>
+</div>

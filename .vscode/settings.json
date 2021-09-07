@@ -1,0 +1,39 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liquid.format": true,
+  "yaml.format.printWidth": 140,
+  "yaml.format.enable": true,
+  "yaml.format.bracketSpacing": false,
+  "yaml.completion": false,
+  "yaml.format.singleQuote": false,
+  "yaml.schemaStore.enable": true,
+  "yaml.validate": true,
+  "yaml.hover": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    }
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true,
+    "**/_site": true,
+    "**/.jekyll-cache": true
+  }
+}

@@ -1,0 +1,49 @@
+{% if paginator.total_pages > 1 %}
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group" role="group">
+      {% if paginator.previous_page %}
+        <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path | remove_first: 'index.html' }}">Newer</a>
+      {% endif %}
+
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <a class="btn {% if page.url == trail.path %}btn-primary{% else  %}btn-outline-primary{% endif %}" href="{{ trail.path | remove_first: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+        {% endfor %}
+      {% endif %}
+
+      {% if paginator.next_page %}
+        <a class="btn btn-outline-primary" href="{{ paginator.next_page_path | remove_first: 'index.html' }}">Older</a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+<!-- 
+{{ paginator.per_page }}
+Maximum number of posts or documents on each pagination page.
+{{ paginator.total_posts }}
+Total number of posts included in pagination.
+{{ paginator.total_pages }}
+Total number of pagination pages created.
+{{ paginator.page	}}
+Number of the current pagination page.
+{{ paginator.page_path }}
+The relative Url path of the current pagination page.
+{{ paginator.previous_page }}
+Number of the previous page in the pagination. Nil if no previous page is available.
+{{ paginator.previous_page_path	}}
+The relative Url of the previous page. Nil if no previous page is available.
+{{ paginator.next_page }}
+Number of the next page in the pagination. Nil if there is no next page available.
+{{ paginator.next_page_path }}
+The relative Url of the next page in the pagination. Nil if there is no next page available.
+{{ paginator.first_page }}
+Number of the first page in the pagination (usually this is 1).
+{{ paginator.first_page_path }}
+The relative Url of the first page in the pagination.
+{{ paginator.last_page }}
+Number of the last page in the pagination (this is equal to total_pages).
+{{ paginator.last_page_path }}
+The relative Url of the last page in the pagination.
+{{ paginator.page_trail }}
+-->

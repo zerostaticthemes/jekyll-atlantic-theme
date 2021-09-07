@@ -1,0 +1,22 @@
+---
+layout: default
+title: Categories
+body_classes: page-categories
+---
+
+<div class="py-16">
+  <h1 class="w-auto text-4xl md:text-6xl font-bold font-sans leading-none lg:w-10/12">
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">{{ page.title }}</span>
+  </h1>
+</div>
+
+{% for category in site.categories %}
+  {% assign category_name = category | first %}
+  {% assign category_slug = category_name | slugify %}
+  <div class="mb-10">
+    <h3 class="font-medium text text-green-400" id="#{{ category_slug }}">{{ category_name }}</h3>
+    {% for post in site.categories[category_name] %}
+      {% include summary-category.html post=post %}
+    {% endfor %}
+  </div>
+{% endfor %}

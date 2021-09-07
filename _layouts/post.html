@@ -1,6 +1,47 @@
 ---
 layout: default
 ---
-<div class="prose">
-  {{ content }}
+
+{% include heading.html heading=page.title description=page.description align="center" %}
+
+<div class="mb-16">
+  <img src="{{ page.image }}"/>
+</div>
+
+<div class="flex">
+
+  <div class="w-3/12">
+    <!-- 
+    {% if page.categories %}
+      <div class="mb-2">
+        {% for category in page.categories %}
+          <a class="p-1 px-3 mr-1 mb-1 inline-block text-xs font-mono rounded bg-green-200 text-green-800 hover:bg-blue-200 hover:text-blue-800" href="{{ "/category/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="text font-semibold text-gray-800">{{ page.date | date_to_long_string }}</div> -->
+
+
+    {% if page.authors %}
+      <div class="flex flex-col ml-4 mb-6">
+        {% for author in page.authors %}
+          {% include author.html
+          author=author
+          show_author_name=true
+          style="block"
+          size="large"
+        %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+
+  </div>
+
+  <div class="w-9/12">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
 </div>
