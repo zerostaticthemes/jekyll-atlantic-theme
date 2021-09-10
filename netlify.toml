@@ -4,3 +4,4 @@
 
 [build.environment]
   JEKYLL_ENV = "production"
+  NODE_ENV= "production"
