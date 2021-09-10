@@ -1,31 +1,17 @@
 ---
 layout: default
+title: "blog"
+heading: "Blog"
 ---
 
-{% for post in paginator.posts %}
-  <div class="mb-20">
+{% include heading.html heading=page.heading %}
+
+<main class="py-6">
+  {% for post in paginator.posts %}
+  <div class="mb-12">
     {% include summary.html post=post %}
   </div>
-{% endfor %}
+  {% endfor %}
+</main>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page:
-    {{ paginator.page }}
-    of
-    {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+{% include paginator.html %}

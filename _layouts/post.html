@@ -2,41 +2,58 @@
 layout: default
 ---
 
+
 {% include heading.html heading=page.title description=page.description align="center" date=page.date %}
 
-<div class="mb-16">
-  <img src="{{ page.image }}"/>
-</div>
+{% if page.authors %}
+  <div class="flex flex-col pb-3 md:hidden">
+    {% for author in page.authors %}
+      {% include author-large.html
+  author=author
+  %}
+    {% endfor %}
+  </div>
+{% endif %}
 
-<div class="flex">
+<img width="1600" height="900" src="{{ page.image }}"/>
 
-  <div class="w-3/12">
+<div class="flex flex-col md:flex-row py-6 md:py-12">
 
-    {% if page.categories %}
-      <div class="mb-16">
-        {% for category in page.categories %}
-          <a class="p-1 px-3 mr-1 mb-1 inline-block text-xs font-mono rounded bg-green-200 text-green-800 hover:bg-blue-200 hover:text-blue-800" href="{{ "/category/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
-        {% endfor %}
-      </div>
-    {% endif %}
-
-
+  <div class="w-full md:w-3/12 pr-3">
     {% if page.authors %}
-      <div class="flex flex-col">
+      <div class="flex flex-col hidden md:flex mb-3 md:mb-6">
         {% for author in page.authors %}
           {% include author-large.html
-          author=author
+        author=author
         %}
         {% endfor %}
       </div>
     {% endif %}
 
-
+    {% if page.categories %}
+      <div class="hidden md:block">
+        {% for category in page.categories %}
+          {% include category-badge.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
-  <div class="w-9/12">
+  <div class="w-full md:w-9/12">
     <div class="prose">
       {{ content }}
     </div>
   </div>
+
 </div>
+
+{% if page.categories %}
+  <div class="py-6 mt-6 border-t-2 block md:hidden">
+    <h3 class="text-sm font-medium mb-1">Categories</h3>
+    <div>
+      {% for category in page.categories %}
+        {% include category-badge.html %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %} 

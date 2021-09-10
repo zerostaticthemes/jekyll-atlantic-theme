@@ -1,0 +1,22 @@
+<div class="logo hidden md:block">
+  <a class="flex items-center hover:opacity-70 transition duration-300 ease-in-out" href="{{ site.baseurl }}">
+    {% if site.logo.logo_desktop_image %}
+    <img class="mr-2" height="{{ site.logo.logo_desktop_height }}" width="{{ site.logo.logo_desktop_width }}"
+      alt="{{ site.title }} Logo" src="{{ site.logo.logo_desktop_image | relative_url }}" />
+    {% endif %}
+    {% if site.logo.logo_desktop_text %}
+    <h2 class="text-2xl font-sans font-semibold">{{ site.logo.logo_desktop_text }}</h2>
+    {% endif %}
+  </a>
+</div>
+<div class="logo-mobile block md:hidden">
+  <a class="flex items-center hover:opacity-70 transition duration-300 ease-in-out" href="{{ site.baseurl }}">
+    {% if site.logo.logo_mobile_image %}
+    <img height="{{ site.logo.logo_mobile_height }}" width="{{ site.logo.logo_mobile_width }}"
+      alt="{{ site.title }} Logo" src="{{ site.logo.logo_mobile_image | relative_url }}" />
+    {% endif %}
+    {% if site.logo.logo_mobile_text %}
+    <h2 class="text-2xl font-sans font-semibold">{{ site.logo.logo_mobile_text }}</h2>
+    {% endif %}
+  </a>
+</div>

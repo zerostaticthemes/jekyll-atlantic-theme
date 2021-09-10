@@ -3,6 +3,7 @@
 {% assign author_object = site.data.authors[author_name] %}
 {% assign style = include.style | default: 'inline' %}
 
+{% if author_object %}
 <div class="flex items-center mr-2 -ml-4">
   {% if author_object.image %}
     <img class="h-7 w-7 rounded-full border-white border-2" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
@@ -12,3 +13,4 @@
     <span class="font-medium text-sm ml-1">{{ author_object.name}}</span>
   {% endif %}
 </div>
+{% endif %}

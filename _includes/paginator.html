@@ -1,49 +1,78 @@
 {% if paginator.total_pages > 1 %}
-  <div class="btn-toolbar" role="toolbar">
-    <div class="btn-group" role="group">
-      {% if paginator.previous_page %}
-        <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path | remove_first: 'index.html' }}">Newer</a>
-      {% endif %}
+<div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+  <div class="flex-1 flex justify-between sm:hidden">
 
-      {% if paginator.page_trail %}
-        {% for trail in paginator.page_trail %}
-          <a class="btn {% if page.url == trail.path %}btn-primary{% else  %}btn-outline-primary{% endif %}" href="{{ trail.path | remove_first: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+      Previous
+    </a>
+    {% else %}
+    <span>&laquo; Previous</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+      Next
+    </a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+
+  </div>
+
+  <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+    <div>
+      <p class="text-sm text-gray-700">
+        Showing page 
+        <span class="font-medium">{{  paginator.page  }}</span>
+        of 
+        <span class="font-medium">{{ paginator.total_pages }}</span>
+        pages
+      </p>
+    </div>
+
+    <div>
+      <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+            <span class="sr-only">Previous</span>
+            <!-- Heroicon name: solid/chevron-left -->
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+          <a href="#" aria-current="page" class="z-10 bg-green-50 border-green-500 text-green-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+            {{ page }}
+          </a>
+          {% elsif page == 1 %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+              {{ page }}
+            </a>
+          {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+            {{ page }}
+          </a>
+          {% endif %}
         {% endfor %}
-      {% endif %}
 
-      {% if paginator.next_page %}
-        <a class="btn btn-outline-primary" href="{{ paginator.next_page_path | remove_first: 'index.html' }}">Older</a>
-      {% endif %}
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+            <span class="sr-only">Next</span>
+            <!-- Heroicon name: solid/chevron-right -->
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        {% else %}
+        {% endif %}
+        
+      </nav>
     </div>
   </div>
+</div>
 {% endif %}
-
-<!-- 
-{{ paginator.per_page }}
-Maximum number of posts or documents on each pagination page.
-{{ paginator.total_posts }}
-Total number of posts included in pagination.
-{{ paginator.total_pages }}
-Total number of pagination pages created.
-{{ paginator.page	}}
-Number of the current pagination page.
-{{ paginator.page_path }}
-The relative Url path of the current pagination page.
-{{ paginator.previous_page }}
-Number of the previous page in the pagination. Nil if no previous page is available.
-{{ paginator.previous_page_path	}}
-The relative Url of the previous page. Nil if no previous page is available.
-{{ paginator.next_page }}
-Number of the next page in the pagination. Nil if there is no next page available.
-{{ paginator.next_page_path }}
-The relative Url of the next page in the pagination. Nil if there is no next page available.
-{{ paginator.first_page }}
-Number of the first page in the pagination (usually this is 1).
-{{ paginator.first_page_path }}
-The relative Url of the first page in the pagination.
-{{ paginator.last_page }}
-Number of the last page in the pagination (this is equal to total_pages).
-{{ paginator.last_page_path }}
-The relative Url of the last page in the pagination.
-{{ paginator.page_trail }}
--->

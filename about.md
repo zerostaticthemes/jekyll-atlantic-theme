@@ -4,7 +4,7 @@ title: "About Us"
 date: 2018-11-28T15:15:34+10:00
 permalink: "/about/"
 description: "Business plan hackathon handshake responsive web design."
-image: "https://source.unsplash.com/VBLHICVh-lI/640x360"
+image: "https://source.unsplash.com/Dq5P6eWZXNY/1600x900"
 ---
 
 # Creating Modern Websites
@@ -37,6 +37,5 @@ There are two primary jobs involved in creating a website: the web designer and 
 - Visual design and illustration
 - Programming and coding
 
-![Design In Figma](/assets/images/services/balazs-ketyi-6yMb5V8L34o-unsplash.jpg)
 
 Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.

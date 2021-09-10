@@ -1,15 +1,11 @@
-<header class="flex items-center justify-between py-10">
-  <div class="flex items-center">
-    <a class="mr-2" href="{{ site.baseurl | relative_url }}">
-      <img class="h-10" height="36px" alt="{{ site.title }} Logo" src="{{ site.logo.image_desktop | relative_url }}"/>
-    </a>
-    <h2 class="text-2xl font-sans font-semibold">Jekyll
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Atlantic</span>
-    </h2>
-  </div>
+<header class="flex items-center justify-between py-6">
+  {% include logo.html %}
   <div class="" id="menu-trigger">
-    <svg aria-hidden="true" class="text-black" data-icon="bars" data-prefix="fas" focusable="false" height="24" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" fill="currentColor"></path>
+    <svg aria-hidden="true" class="text-black" data-icon="bars" data-prefix="fas" focusable="false" height="24"
+      role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+        fill="currentColor"></path>
     </svg>
   </div>
 </header>

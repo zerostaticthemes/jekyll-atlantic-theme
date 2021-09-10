@@ -14,20 +14,12 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-    },
-    extend: {
-      colors: {
-        primary: "#FF4D4D",
-        secondary: "#F9CB28",
-      },
-      fontFamily: {
-        sans: ["Lato", ...defaultTheme.fontFamily.sans],
-      },
-    },
+    }
   },
   variants: {
     extend: {
       grayscale: ["hover", "focus"],
+      margin: ['last']
     },
     container: [],
   },

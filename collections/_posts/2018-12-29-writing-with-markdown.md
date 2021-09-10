@@ -6,15 +6,11 @@ authors: ["Sage Kirk", "Mike Vance"]
 categories: ["Development", "Javascript", "Web Design"]
 tags: ["Writing"]
 description: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
-thumbnail: "https://source.unsplash.com/CTivHyiTbFw/1600x900"
+thumbnail: "https://source.unsplash.com/CTivHyiTbFw/640x360"
 image: "https://source.unsplash.com/CTivHyiTbFw/1600x900"
 ---
 
-## Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML.
-
-Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.
+Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
 ## History
 
@@ -24,7 +20,7 @@ John Gruber created the Markdown language in 2004 in collaboration with Aaron Sw
 
 To this end, its main inspiration is the existing conventions for marking up plain text in email, though it also draws from earlier markup languages, notably setext, Textile, and reStructuredText.
 
-## Example
+### Syntax Highlighting
 
 ```js
 $(window).scroll(function () {
@@ -48,9 +44,9 @@ From 2012, a group of people including Jeff Atwood and John MacFarlane launched 
 
 ### GitHub Flavored Markdown (GFM)
 
-In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions. GitHub also changed the parser used on their sites accordingly, which required that some documents be changed. For instance, GFM now requires that the hash symbol that creates a heading be separated from the heading text by a space character.he user to create their own.
+In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions. 
 
-![unsplash](https://source.unsplash.com/XKGKZBroImE/560)
+![unsplash](https://source.unsplash.com/3igFnx0L2pY/640x360)
 
 ### Markdown Extra
 
@@ -65,3 +61,4 @@ Markdown Extra adds the following features to Markdown:
 - definition lists
 - footnotes
 - abbreviations
+

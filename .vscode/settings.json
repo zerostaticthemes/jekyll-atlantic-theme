@@ -1,6 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "liquid.format": true,
   "yaml.format.printWidth": 140,
   "yaml.format.enable": true,
@@ -31,8 +30,6 @@
   "search.exclude": {
     "**/.git": true,
     "**/node_modules": true,
-    "**/bower_components": true,
-    "**/tmp": true,
     "**/_site": true,
     "**/.jekyll-cache": true
   }
