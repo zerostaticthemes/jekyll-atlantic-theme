@@ -2,7 +2,7 @@
   "name": "jekyll-atlantic",
   "version": "1.0.0",
   "description": "A Jekyll Tailwind starter blog",
-  "devDependencies": {
+  "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.6",
