@@ -6,7 +6,7 @@ authors: ["Sage Kirk", "Mike Vance"]
 categories: ["Development", "Javascript", "Web Design"]
 tags: ["Writing"]
 description: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
-thumbnail: "https://source.unsplash.com/CTivHyiTbFw/640x360"
+thumbnail: "assets/images/unsplash-CTivHyiTbFw-640x360.jpeg"
 image: "https://source.unsplash.com/CTivHyiTbFw/1600x900"
 ---
 
