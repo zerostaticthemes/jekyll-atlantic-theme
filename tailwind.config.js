@@ -23,7 +23,6 @@ module.exports = {
     container: [],
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("tailwindcss-debug-screens"),
+    require("@tailwindcss/typography")
   ],
 };

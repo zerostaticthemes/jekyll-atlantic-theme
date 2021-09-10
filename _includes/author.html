@@ -6,7 +6,7 @@
 {% if author_object %}
 <div class="flex items-center mr-2 -ml-4">
   {% if author_object.image %}
-    <img class="h-7 w-7 rounded-full border-white border-2" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
+    <img width="28" height="28" class="rounded-full border-white border-2" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
   {% endif %}
 
   {% if show_author_name %}

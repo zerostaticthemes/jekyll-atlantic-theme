@@ -9,8 +9,7 @@
     "postcss": "^8.3.6",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
-    "tailwindcss": "^2.2.4",
-    "tailwindcss-debug-screens": "^2.1.0"
+    "tailwindcss": "^2.2.4"
   },
   "author": "rob@zerostatic.io",
   "license": "MIT"

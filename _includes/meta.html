@@ -1,0 +1,32 @@
+<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }} - {{ site.title}}{% else %}{{ site.title }}{% endif %}</title>
+
+{% if page.meta_description %}
+  <meta name="description" content="{{ page.meta_description }}"/>
+{% elsif page.description %}
+  <meta name="description" content="{{ page.description }}"/>
+{% endif %}
+
+{% if page.meta_og_title %}
+  <meta property="og:title" content="{{ page.meta_og_title }}"/>
+{% endif %}
+{% if page.meta_og_type %}
+  <meta property="og:type" content="{{ page.meta_og_type }}"/>
+{% endif %}
+{% if page.meta_og_url %}
+  <meta property="og:url" content="{{ page.meta_og_url }}"/>
+{% endif %}
+{% if page.meta_og_image %}
+  <meta property="og:image" content="{{ page.meta_og_image }}"/>
+{% endif %}
+{% if page.meta_og_description %}
+  <meta property="og:description" content="{{ page.meta_og_description }}"/>
+{% endif %}
+{% if page.meta_twitter_card %}
+  <meta name="twitter:card" content="{{ page.meta_twitter_card }}"/>
+{% endif %}
+{% if page.meta_twitter_site %}
+  <meta name="twitter:site" content="{{ page.meta_twitter_site }}"/>
+{% endif %}
+{% if page.meta_twitter_creator %}
+  <meta name="twitter:creator" content="{{ page.meta_twitter_creator }}"/>
+{% endif %}
