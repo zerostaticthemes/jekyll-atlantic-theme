@@ -12,9 +12,6 @@
     "tailwindcss": "^2.2.4",
     "tailwindcss-debug-screens": "^2.1.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "rob@zerostatic.io",
   "license": "MIT"
 }
