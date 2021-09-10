@@ -9,22 +9,27 @@ Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Ta
 
 ### Theme features
 
-- ![tailwind](https://jamstackthemes.dev/images/icons/tailwind.svg)[Tailwind CSS](https://tailwindcss.com/docs) Jekyll 4.1
-- Uses Tailwind CSS
-- Uses 
-- Services (Collection)
-- Team (Collection)
-- Features (Data)
-- SCSS
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2 - 
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1 - 
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/)
+
+- Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
+- Works with native Jekyll commands `jekyll serve` and `jekyll build`
+- Correctly uses Tailwind to purge CSS in production
+
+- Full blog functionality
+- Beautfifuly designed responsive blog and post layouts
+- Blog categories
+- Blog authors (multiple)
+- Blog pagination
+
+- Ready to deploy to Netlify
 - Responsive design
-- Bootstrap 4.3 grid and media queries only
 - Responsive menu
-- 100/100 Google Lighthouse speed score
-- 100/100 Google Lighthouse seo score
-- 100/100 Google Lighthouse accessibility score
-- 100/100 Google Lighthouse best practices score
-- Under 50KB without images or 80KB with images and illustrations ⚡
-- Under 20KB without Google fonts ⚡⚡⚡
+- 100/100 Google Lighthouse speed score ⚡
+- 100/100 Google Lighthouse seo score 🏆
+- 94/100 Google Lighthouse accessibility score (but this is just because of the green text color contrast)
+- Page size is 10KB without images, can you believe it?? 🔥
 - Robust example content included
 - Royalty free illustrations included
 - Netlify & Github Pages ready
@@ -40,6 +45,12 @@ If this is your first time using Jekyll, please follow the [Jekyll docs](https:/
 Download or clone the theme.
 
 To run the theme locally, navigate to the theme directory and run:
+
+To use Tailwind and PostCSS:
+
+```
+npm install
+```
 
 ```
 bundle install
