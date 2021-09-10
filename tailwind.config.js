@@ -1,9 +1,9 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: {
-    content: ["_site/**/*.html"],
-  },
+  purge: [
+    "_site/**/*.html"
+  ],
   darkMode: false,
   theme: {
     screens: {
