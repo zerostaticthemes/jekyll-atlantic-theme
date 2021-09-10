@@ -1,12 +1,12 @@
 ---
-title: 'Optimizing Your Website'
+title: "Optimizing Your Website"
 date: 2018-12-20T09:38:03+10:00
 layout: post
-authors: ['Sage Kirk']
-categories: ['Development', 'Web Design']
+authors: ["Sage Kirk"]
+categories: ["Development", "Web Design"]
 description: "Making sure your website runs fast and loads quickly is a fundamental part of the web design and seo process."
-thumbnail: 'https://source.unsplash.com/MS7KD9Ti7FQ/1600x900'
-image: 'https://source.unsplash.com/MS7KD9Ti7FQ/1600x900'
+thumbnail: "https://source.unsplash.com/MS7KD9Ti7FQ/640x360"
+image: "https://source.unsplash.com/MS7KD9Ti7FQ/1600x900"
 ---
 
 Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
@@ -43,7 +43,7 @@ From 2012, a group of people including Jeff Atwood and John MacFarlane launched 
 
 ### GitHub Flavored Markdown (GFM)
 
-In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions. 
+In 2017, GitHub released a formal specification of their GitHub Flavored Markdown (GFM) that is based on CommonMark. It follows the CommonMark specification exactly except for tables, strikethrough, autolinks and task lists, which the GitHub spec has added as extensions.
 
 ![unsplash](https://source.unsplash.com/3igFnx0L2pY/640x360)
 
@@ -60,4 +60,3 @@ Markdown Extra adds the following features to Markdown:
 - definition lists
 - footnotes
 - abbreviations
-

@@ -10,7 +10,7 @@ sass:
   style: compact
   precision: 10
 
-google_analytics_id: ''
+google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
@@ -55,7 +55,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - yarn.lock
+  - package-lock.json
   - vendor
   - LICENSE.md
   - LICENSE
   - README.md
+  - .vscode
+  - .gitignore
+  - .liquidrc
