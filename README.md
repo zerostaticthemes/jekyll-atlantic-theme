@@ -2,15 +2,15 @@
 
 Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io)
+[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
 
 ![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
 ### Theme features
 
-- <img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2
-- <img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1
-- <img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/)
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
+<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/) 8.3+
 
 - Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
 - Works with native Jekyll commands `jekyll serve` and `jekyll build`
