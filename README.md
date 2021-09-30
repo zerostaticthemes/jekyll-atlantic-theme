@@ -2,8 +2,7 @@
 
 Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | 
-[Zerostatic Themes](https://www.zerostatic.io)
+[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io)
 
 ![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
