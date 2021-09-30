@@ -1,18 +1,8 @@
 {
   "editor.formatOnSave": true,
-  "liquid.format": true,
-  "yaml.format.printWidth": 140,
-  "yaml.format.enable": true,
-  "yaml.format.bracketSpacing": false,
-  "yaml.completion": false,
-  "yaml.format.singleQuote": false,
-  "yaml.schemaStore.enable": true,
-  "yaml.validate": true,
-  "yaml.hover": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
