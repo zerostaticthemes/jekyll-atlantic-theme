@@ -1,6 +1,6 @@
-baseurl: '/'
+baseurl: "/"
 permalink: pretty
-title: 'Jekyll Atlantic'
+title: "Jekyll Atlantic"
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -14,13 +14,17 @@ google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: 'Jekyll <strong>Atlantic</strong>'
+  logo_desktop_text: "Jekyll <strong>Atlantic</strong>"
   logo_mobile_image: assets/images/logo/logo-mobile.svg
-  logo_mobile_text: ''
-  logo_desktop_height: '36px'
-  logo_desktop_width: '36px'
-  logo_mobile_height: '36px'
-  logo_mobile_width: '36px'
+  logo_mobile_text: ""
+  logo_desktop_height: "36px"
+  logo_desktop_width: "36px"
+  logo_mobile_height: "36px"
+  logo_mobile_width: "36px"
+
+seo:
+  meta_twitter_site: "@zerostaticio"
+  meta_twitter_creator: "@zerostaticio"
 
 plugins:
   - jekyll-environment-variables
@@ -37,16 +41,16 @@ collections:
 
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post
   - scope:
-      path: 'images'
+      path: "images"
     values:
       image: true
   - scope:
-      path: 'categories'
+      path: "categories"
     values:
       layout: category
       permalink: /category/:basename/
