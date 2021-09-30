@@ -2,5 +2,6 @@
 layout: home
 title: Jekyll Atlantic Theme
 heading: <em>Jekyll Tailwind</em> Starter Blog
-description: Jekyll Atlantic contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: Atlantic is a beautiful Tailwind CSS theme for Jekyll. It shows best practices for using Tailwind with Jekyll.
+
 ---
