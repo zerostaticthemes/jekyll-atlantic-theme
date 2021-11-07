@@ -1,13 +1,60 @@
 ---
 layout: default
 ---
+<!-- Hero -->
+<div class="space-y-12">
+  <!-- {% include heading.html heading=page.heading %} -->
+  {% for post in site.posts limit:1 %}
+	<section class="flex flex-col items-center w-full pt-6 text-gray-900 group md:pt-12 md:space-x-6 md:flex-row ">
+		<div class="relative transition duration-500 ease-in-out transform group-hover:shadow-lg group-hover:-translate-y-2 group-hover:opacity-70 ">
+			<img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
+      <div class="absolute top-0 p-5">
+        {% for category in post.categories %}
+          {% include category-badge.html %}
+        {% endfor %}
+      </div>
+		</div>
+		<a class="group" href="{{ post.url | relative_url }}">
+			<div class="relative max-w-lg py-6 space-y-6 md:p-6 ">
+				<div class="space-y-2">
+          <div class="flex items-center">
+            {% if post.authors %}
+              <div class="flex ml-4">
+                {% for author in post.authors %}
+                  {% include author.html
+              author=author
+              show_author_name=false
+              %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            <div class="text-sm font-medium text-gray-700">{{ post.date | date_to_long_string }}</div>
+          </div>
+					<div class="inline-block text-2xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
+				</div>
+				<div class="text-gray-500">
+					<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+				</div>
+				<div href="{{ post.image | prepend: site.baseurl }}" class="relative inline-flex items-center text-lg font-medium text-yellow-500 hover:text-yellow-700">
+					<span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-12 ease">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+						</svg>
+					</span>
+					<span class="relative">Leer Mas</span>
+				</div>
+			</div>
+		</a>
+	</section>
+  {% endfor %}
 
-{% include heading.html heading=page.heading %}
-
-<main class="py-6">
-  {% for post in site.posts %}
-  <div class="mb-12">
+<main class="grid gap-12 py-6 md:grid-cols-2 ">
+  {% for post in site.posts limit:6 offset:1 %}
     {% include summary.html post=post %}
-  </div>
   {% endfor %}
 </main>
+{% include paginator.html %}
+  <div class="mb-12">
+    {% include cta.html %}
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="py-24 text-black ">
+  <div class="container max-w-screen-xl px-4 mx-auto">
+  <h3>Other proyects</h3>
+  <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+    {% for minipro in site.minipro %} {{ minipro.content | markdownify }}
+    <a class="space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="{{ minipro.link }}">
+      <div class="relative transition duration-500 ease-in-out shadow-xl hover:shadow-sm">
+        <img class="border border-yellow-500 rounded-lg" src="{{ minipro.img | prepend: site.baseurl }}" alt="{{ minipro.title }}" title="{{ minipro.title }}" />
+      </div>
+      <h2 class="text-sm text-yellow-500">{{ minipro.tag }}</h2>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+</section>

@@ -1,9 +1,9 @@
-<div class="flex flex-col md:flex-row w-full lg:w-10/12">
+<div class="flex flex-col w-full md:flex-row group">
 
   {% if post.thumbnail %}
-    <div class="md:mr-4 mb-2 md:mb-0 md:w-4/12 ">
-      <a class="bg-gray-100" href="{{ post.url | relative_url }}">
-        <img width="640" height="360" class="rounded mb-3 hover:opacity-70 transition duration-300 ease-in-out" alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}"/></a>
+    <div class="md:mr-4 md:mb-0 md:w-4/12 ">
+      <a class="bg-gray-100 " href="{{ post.url | relative_url }}">
+        <img class="transition duration-300 duration-500 ease-in-out transform rounded group-hover:shadow-lg group-hover:-translate-y-1 group-hover:opacity-70" alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}"/></a>
     </div>
   {% endif %}
 
@@ -22,11 +22,11 @@
       <div class="text-sm font-medium text-gray-700">{{ post.date | date_to_long_string }}</div>
     </div>
 
-    <a href="{{ post.url | relative_url }}" class="hover:text-green-400">
-      <h2 class="text-2xl font-semibold mb-1">{{ post.title }}</h2>
+    <a href="{{ post.url | relative_url }}" class="hover:text-yellow-500">
+      <h2 class="mb-1 text-2xl font-semibold">{{ post.title }}</h2>
     </a>
 
-    <p class="text-base font-light text-gray-600 mb-4">{{ post.description }}</p>
+    <p class="mb-4 text-base font-light text-gray-600">{{ post.description }}</p>
 
     {% if post.categories %}
       <div class="mb-2">

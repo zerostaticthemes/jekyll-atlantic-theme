@@ -1,11 +1,115 @@
-<header class="flex items-center justify-between py-6">
-  {% include logo.html %}
-  <div class="" id="menu-trigger">
-    <svg aria-hidden="true" class="text-black" data-icon="bars" data-prefix="fas" focusable="false" height="24"
-      role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-        fill="currentColor"></path>
-    </svg>
+<div class="relative bg-white">
+{% if page.url == "/portfolio/" %}
+<nav role="navigation" class="relative w-full text-gray-900 ">
+    <div class="absolute inset-x-0 overflow-hidden opacity-40 -inset-y-2 bg-gradient-to-r from-yellow-500 to-pink-500 rounded-xl filter blur-md"></div>
+    
+    {% else %}
+<nav role="navigation" class="relative w-full text-gray-900 ">
+    <div class="absolute inset-x-0 overflow-hidden opacity-40 -inset-y-2 bg-gradient-to-r from-yellow-500 to-pink-500 rounded-xl filter blur-md"></div>
+        
+{% endif %}
+    <div x-data="{ open: false }" class="relative bg-white">
+        <div class="container flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row">
+            <div class="flex flex-row items-center justify-between py-4">
+                <!-- Logo -->
+                {% include logo.html %}      
+                </a>
+                <!-- boton de cierre en mobiles -->
+                <button class="md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path
+                            x-show="open"
+                            fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+            <div :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 my-6 space-y-6 sm:space-y-0 md:pb-0 md:flex md:justify-end md:flex-row">
+            <!-- {% assign pages_list = site.pages | sort:"url" %}
+            {% for node in pages_list %}
+                {% if node.title != null %}
+                {% if node.layout == "page" %}
+                <a class="{% if page.url == node.url %} text-yellow-500 {% endif %} btn text-white hover:text-gray-300 px-3 py-2 rounded-mds sm:text-sm text-xl font-medium" href="{{ node.url }}">
+                    {{ node.title }}
+                </a>
+                {% endif %}
+            {% endif %}
+            {% endfor %} -->
+            
+            {% for item in site.data.menu.main %}
+            <a class="px-4 py-2 btn hover:text-yellow-500" href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+            <!-- <a class="px-3 py-2 text-xl font-medium btn hover:text-yellow-500 rounded-mds sm:text-sm" href="{{ site.url }}">Blog</a>
+            <a class="px-3 py-2 text-xl font-medium btn hover:text-yellow-500 rounded-mds sm:text-sm" href="/portfolio">Portfolio</a>
+            <a class="px-3 py-2 text-xl font-medium btn hover:text-yellow-500 rounded-mds sm:text-sm" href="#subscribe">Subscribe</a>
+            <a class="px-3 py-2 text-xl font-medium btn hover:text-yellow-500 rounded-mds sm:text-sm" href="mailto:{{ site.email | encode_email }}" title="Contact me">Contacto</a> -->
+
+
+            
+            <!-- Menu desplegable -->
+            <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button
+                    @click="open = !open"
+                    class="flex flex-row items-center w-full p-2 mt-2 text-lg font-normal text-left bg-transparent dark-mode:bg-transparent dark-mode:focus:text-black dark-mode:hover:text-black dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-yellow-600 focus:text-gray-100 focus:outline-none focus:shadow-outline"
+                >
+                    <span>About</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 ml-1 -mt-1 text-yellow-500 transition-transform duration-200 transform">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div
+                    x-show="open"
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute z-30 w-full mt-3 origin-top-right shadow-lg md:w-72"
+                >
+                    <div class="p-8 text-gray-100 bg-white border-yellow-500 shadow dark-mode:bg-gray-700 sm:text-gray-900 sm:border-b-4">
+                        <a
+                            class="block p-2 mt-2 text-lg font-normal transform bg-transparent dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-black dark-mode:hover:text-black dark-mode:text-gray-200 md:mt-0 hover:text-gray-800 focus:text-gray-100 focus:outline-none focus:shadow-outline hover:translate-x-2"
+                            href="#"
+                        >
+                            <p class="text-base font-medium leading-6">
+                                Small
+                            </p>
+                            <p class="text-sm leading-5">
+                                Learn about tips, product updates and company culture.
+                            </p>
+                        </a>
+                        <a
+                            class="block p-2 mt-2 text-lg font-normal transform bg-transparent dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-black dark-mode:hover:text-black dark-mode:text-gray-200 md:mt-0 hover:text-gray-800 focus:text-gray-100 focus:outline-none focus:shadow-outline hover:translate-x-2"
+                            href="#"
+                        >
+                            <p class="text-base font-medium leading-6">
+                                Small
+                            </p>
+                            <p class="text-sm leading-5">
+                                Learn about tips, product updates and company culture.
+                            </p>
+                        </a>
+                        <a
+                            class="block p-2 mt-2 text-lg font-normal transform bg-transparent dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-black dark-mode:hover:text-black dark-mode:text-gray-200 md:mt-0 hover:text-gray-800 focus:text-gray-100 focus:outline-none focus:shadow-outline hover:translate-x-2"
+                            href="#"
+                        >
+                            <p class="text-base font-medium leading-6">
+                                Small
+                            </p>
+                            <p class="text-sm leading-5">
+                                Learn about tips, product updates and company culture.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+      </div>
   </div>
-</header>
+  
+</nav>

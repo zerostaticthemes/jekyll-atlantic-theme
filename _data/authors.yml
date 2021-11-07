@@ -1,7 +1,7 @@
-sage_kirk:
-  name: 'Sage Kirk'
-  image: 'assets/images/author/sage-kirk.jpg'
-  twitter: '@zerostaticio'
+ariel_cerda:
+  name: 'Ariel Cerda'
+  image: 'https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg'
+  twitter: '@smilesharks'
 mike_vance:
   name: 'Mike Vance'
   image: 'assets/images/author/mike-vance.jpg'

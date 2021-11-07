@@ -1,6 +1,9 @@
 baseurl: "/"
 permalink: pretty
-title: "Jekyll Atlantic"
+title: Ariel Cerda Hernandez - Blog
+keywords: diseñador, designer, UX, UI
+description: >- # this means to ignore newlines until "baseurl:"
+  I am an UI designer  Video editor, content creator, and passionate geek who loves technology.
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -10,11 +13,12 @@ sass:
   style: compact
   precision: 10
 
-google_analytics_id: false # replace with "UA-XXXX"
+google_analytics_id: UA-89023908-1 # replace with "UA-XXXX"
+disqus: smilesharks
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: "Jekyll <strong>Atlantic</strong>"
+  logo_desktop_text: "Ariel Cerda <strong>Blog</strong>"
   logo_mobile_image: assets/images/logo/logo-mobile.svg
   logo_mobile_text: ""
   logo_desktop_height: "36px"
@@ -23,38 +27,57 @@ logo:
   logo_mobile_width: "36px"
 
 seo:
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+  meta_twitter_site: "@smilesharks"
+  meta_twitter_creator: "@smilesharks"
   meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
+
+author:
+  name: Ariel
+  picture: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
+
+social:
+  name: Ariel Cerda
+  links:
+    - https://twitter.com/Smilesharks
+    - https://www.linkedin.com/in/Smilesharks
+    - https://github.com/Smilesharks
+    - https://www.instagram.com/smilesharks/
+    - https://www.youtube.com/channel/UCWip2TrjNMXb0kg6LWbsNzw
 
 plugins:
   - jekyll-environment-variables
   - jekyll-postcss
   - jekyll-paginate
 
-paginate: 3
+paginate: 7
 paginate_path: /blog/page:num/
 
 collections:
   posts:
     output: true
     permalink: /blog/:path/
+  minipro:
+    output: true
+    permalink: /minipro/:name
+  projects:
+    output: true
+    permalink: /projects/:name
 
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  - scope:
-      path: "images"
-    values:
-      image: true
-  - scope:
-      path: "categories"
-    values:
-      layout: category
-      permalink: /category/:basename/
+# defaults:
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: post
+#   - scope:
+#       path: "images"
+#     values:
+#       image: true
+#   - scope:
+#       path: "categories"
+#     values:
+#       layout: category
+#       permalink: /category/:basename/
 
 exclude:
   - Gemfile

@@ -8,3 +8,9 @@ main:
   - name: "About"
     url: "/about/"
     weight: 3
+  - name: "Portafolio"
+    url: "/portfolio/"
+    weight: 4
+  - name: "Subscribe"
+    url: "#subscribe"
+    weight: 5

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A Jekyll Tailwind starter blog",
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.4.4",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.6",

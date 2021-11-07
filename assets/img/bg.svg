@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1547px" height="947px" viewBox="0 0 1547 947" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M83,92 C27.6666667,150 0,234.333333 0,345 C0,511 51,994 490,994 C782.666667,994 1049.33333,914.666667 1290,756 L1290,0 L83,92 Z" id="path-1"></path>
+    </defs>
+    <g id="bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#0A1420" x="0" y="0" width="1547" height="947"></rect>
+        <g id="yo" transform="translate(362.000000, -369.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#16212C" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

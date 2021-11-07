@@ -1,0 +1,154 @@
+<section class="space-x-6" id="portfolio">
+    <h2>Projects</h2>
+
+    {% for projects in site.projects %} {{ projects.content | markdownify }}
+    <div class="text-black">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-12 sm:grid-cols-3">
+                <!-- Ficha tecnica -->
+                <div class="space-y-6">
+                    <!-- Logo -->
+                    <div class="space-y-6">
+                        <img src="{{ projects.logourl | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+                        <a class="block text-yellow-500" target="_self" title="{{ projects.category }}" alt="{{ projects.category }}" href="{{ projects.category | slugize }}">{{ projects.category }}</a>
+                    </div>
+
+                    <img src="{{ projects.featureimg | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+
+                    <h2 class="space-x-2 text-2xl ">
+                        <span>Description</span>
+                    </h2>
+                    <p class="text-base">{{ projects.description }}</p>
+                    <div class="space-y-6">
+                        <div x-data="{ isOpen: false }">
+                            <button @click='isOpen = !isOpen' class="flex flex-col w-full focus:outline-none">
+                                
+                                <div class="flex flex-row items-center justify-between w-full">
+                                    <h4 class="m-0 text-xl hover:text-gray-200 ">The problem</h4>
+                                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div x-show.transition.origin.top="isOpen"
+                            x-transition:enter="transition-all duration-500 transform ease-in-out"
+                            x-transition:enter-start="scale-75"
+                            x-transition:leave="transition-all duration-500 transform ease-in-out"
+                            x-transition:leave-end="opacity-0 scale-75 "
+                            class="bg-grey-lightest">
+                                <div class="py-4">
+                                    <p class="m-0">{{ projects.problem }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div x-data="{ isOpen: false }">
+                            <button @click='isOpen = !isOpen' class="relative flex flex-col w-full focus:outline-none">
+                                
+                                <div class="relative flex flex-row items-center justify-between w-full">
+                                    <h4 class="m-0 text-xl "><span>The goal</span></h4>
+                                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div x-show.transition.origin.top="isOpen"
+                            x-transition:enter="transition-all duration-500 transform ease-out"
+                            x-transition:enter-start="opacity-0 scale-75"
+                            x-transition:leave="transition-all duration-500 transform ease-in"
+                            x-transition:leave-end="opacity-0 scale-75 "
+                            class="bg-grey-lightest">
+                                <div class="py-4">
+                                    <p class="m-0">{{ projects.goal }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
+
+                            <a class="flex flex-row items-center justify-between w-full text-xl font-black leading-tight text-yellow-500 hover:text-yellow-700" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">
+                                <div class="">Demo</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>                                
+                            </a>
+                        {% else %}
+                        <a class="flex flex-row items-center justify-between w-full text-xl font-black leading-tight text-gray-500 pointer-events-auto" alt="Demo unavailable">
+                            <div class="link">Demo unavailable</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>                                
+                        </a>                            
+                        {% endif %}
+                    </div>
+                    <ul class="pl-4 text-base text-gray-800">
+                        <li>Client / {{ projects.client }}</li>
+                        <li>Platform / {{ projects.platform }}</li>
+                        <li>Agency / {{ projects.agency }}</li>
+                        <li>Role / {{ projects.role }}</li>
+                    </ul>
+                </div>
+                <!-- Multimedia -->
+                <div class="flex flex-col space-y-12 sm:col-span-2">
+                    <!-- Imagenes -->
+                    <div class="space-y-6">
+                        <h6>Previews design / Concept</h6>
+                        <div x-data="{}"  class="grid grid-cols-2 gap-6 sm:grid-cols-3">
+                            {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
+                            {% for image in site.static_files %}
+                                {% if image.path contains ipath %}
+                                    <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="cursor-pointer tile">
+                                        <img alt="Placeholder" class="w-full rounded-lg object-fit" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- Video -->
+                    <div class="space-y-6">
+                        {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
+                        <h6>Video</h6>
+                        <div class="flex flex-col">
+                            <div class="mx-auto space-y-6 divide-y-4 divide-gray-100 divide-solid">
+                                <video autoplay muted loop class="w-full" controls>
+                                    <source src="{{ projects.videourl | prepend: site.baseurl }}" type="video/mp4" />
+                                    <source src="{{ projects.videourl | prepend: site.baseurl }}" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+
+    <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+        <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+          <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="fixed inset-0 z-50 flex items-center justify-center w-full p-2 overflow-hidden bg-black bg-opacity-75 h-100">
+            <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+              <div class="z-50">
+                <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="text-black fill-current " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="p-2">
+                <img :alt="imgModalSrc" class="object-contain rounded-lg h-1/2-screen" :src="imgModalSrc">
+                <p x-text="imgModalDesc" class="py-2 text-center text-black"></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>

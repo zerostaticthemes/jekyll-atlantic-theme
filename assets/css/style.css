@@ -12,7 +12,7 @@
   .heading {
     em,
     strong {
-      @apply text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-2;
+      @apply mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500;
 
       font-weight: inherit;
       font-style: normal;
@@ -21,10 +21,21 @@
   .logo {
     h2 {
       strong {
-        @apply text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-2;
+        @apply mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500;
         font-weight: inherit;
         font-style: normal;
       }
     }
   }
+}
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+.dev * {
+	@apply border border-red-500;
 }

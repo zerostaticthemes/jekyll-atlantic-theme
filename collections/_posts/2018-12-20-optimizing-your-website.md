@@ -2,7 +2,7 @@
 title: "Optimizing Your Website"
 date: 2018-12-20T09:38:03+10:00
 layout: post
-authors: ["Sage Kirk"]
+authors: ["Ariel Cerda"]
 categories: ["Development", "Web Design"]
 description: "Making sure your website runs fast and loads quickly is a fundamental part of the web design and seo process."
 thumbnail: "https://source.unsplash.com/MS7KD9Ti7FQ/640x360"

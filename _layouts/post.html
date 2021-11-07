@@ -14,13 +14,20 @@ layout: default
   </div>
 {% endif %}
 
-<img width="1600" height="900" src="{{ page.image }}"/>
+<div class="overflow-hidden transition duration-300 ease-in-out rounded-md shadow-2xl aspect-w-16 aspect-h-9 sm:flex sm:space-x-6 hover:shadow-lg">
+    {% assign youtubeId = post.youtubeId | strip_newlines %}
+    {% if page.youtubeId == ""  %}
+        <img class="object-cover w-full sm:rounded-xl " src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}" />
+        {% else %}
+        {% include youtubePlayer.html id=page.youtubeId %}
+    {% endif %}
+</div>
 
-<div class="flex flex-col md:flex-row py-6 md:py-12">
+<div class="flex flex-col py-6 md:flex-row md:py-12">
 
-  <div class="w-full md:w-3/12 pr-3">
+  <div class="w-full pr-12 md:w-3/12">
     {% if page.authors %}
-      <div class="flex flex-col hidden md:flex mb-3 md:mb-6">
+      <div class="flex flex-col hidden mb-3 md:flex md:mb-6">
         {% for author in page.authors %}
           {% include author-large.html
         author=author
@@ -36,23 +43,34 @@ layout: default
         {% endfor %}
       </div>
     {% endif %}
+    <div class="hidden md:block">
+      {% include related.html %}
+    </div>
   </div>
 
-  <div class="w-full md:w-9/12">
-    <div class="prose">
+  <div class="w-full space-y-6 md:space-y-12 md:w-9/12">
+    <div class="prose prose-lg prose-yellow">
       {{ content }}
+    </div>
+    <div class="space-y-6 md:space-y-12 md:w-10/12 ">
+      {% include cta.html %}
+
+      {% include disqus.html disqus_identifier=page.disqus_identifier %}
     </div>
   </div>
 
 </div>
 
 {% if page.categories %}
-  <div class="py-6 mt-6 border-t-2 block md:hidden">
-    <h3 class="text-sm font-medium mb-1">Categories</h3>
+  <div class="block py-6 mt-6 border-t-2 md:hidden">
+    <h3 class="mb-1 text-sm font-medium">Categories</h3>
     <div>
       {% for category in page.categories %}
         {% include category-badge.html %}
       {% endfor %}
     </div>
   </div>
-{% endif %} 
+  {% endif %} 
+  <div class="block py-6 mt-6 border-t-2 md:hidden">
+    {% include related.html %}
+  </div>

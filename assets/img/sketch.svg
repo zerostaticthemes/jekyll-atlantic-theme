@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="28.2951328%" fx="50%" fy="28.2951328%" r="115.533809%" gradientTransform="translate(0.500000,0.282951),scale(0.580972,1.000000),rotate(90.000000),translate(-0.500000,-0.282951)" id="radialGradient-1">
+            <stop stop-color="#FD7C00" offset="0%"></stop>
+            <stop stop-color="#F35300" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="2.49758199%" fx="50%" fy="2.49758199%" r="83.700565%" gradientTransform="translate(0.500000,0.024976),scale(1.000000,0.989547),rotate(90.000000),translate(-0.500000,-0.024976)" id="radialGradient-2">
+            <stop stop-color="#FDCE21" offset="0%"></stop>
+            <stop stop-color="#FDA500" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="79.5918367%" y1="81.25%" x2="30.8540604%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FDD12B" offset="0%"></stop>
+            <stop stop-color="#FDC003" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.561151,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-4">
+            <stop stop-color="#FEF3CB" offset="0%"></stop>
+            <stop stop-color="#FEDD67" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FC8900" offset="0%"></stop>
+            <stop stop-color="#FCAA00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="sketch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-/-Sketch">
+            <g id="Sketch" transform="translate(22.400000, 22.400000)">
+                <rect id="Form" fill="#FFFFFF" x="0" y="0" width="51.2" height="51.2" rx="25.6"></rect>
+                <g id="icon" transform="translate(8.000000, 10.560000)">
+                    <g id="Bottom-Back" transform="translate(0.000000, 11.400810)" fill="url(#radialGradient-1)">
+                        <polygon id="Polygon" transform="translate(17.600000, 10.225101) rotate(-180.000000) translate(-17.600000, -10.225101) " points="17.6 -5.06297658e-14 35.2 20.4502024 -1.26574414e-14 20.4502024"></polygon>
+                    </g>
+                    <g id="Bottom-Mid" transform="translate(7.125506, 11.400810)">
+                        <polygon id="Polygon" fill="#FDCA0D" transform="translate(10.474494, 10.225101) rotate(-180.000000) translate(-10.474494, -10.225101) " points="10.4744939 0 20.9489879 20.4502024 -1.26574414e-14 20.4502024"></polygon>
+                        <polygon id="Polygon" fill="url(#radialGradient-2)" transform="translate(10.474494, 10.225101) rotate(-180.000000) translate(-10.474494, -10.225101) " points="10.4744939 0 20.5927126 20.4502024 0.356275304 20.4502024"></polygon>
+                    </g>
+                    <g id="Top-Left" transform="translate(7.125506, 0.000000)" fill="url(#linearGradient-3)">
+                        <polygon id="Polygon" transform="translate(5.237247, 5.700405) rotate(-180.000000) translate(-5.237247, -5.700405) " points="9.9757085 10.3319838 10.4744939 6.70844397e-13 5.06297658e-14 11.4008097"></polygon>
+                    </g>
+                    <g id="Top-Right" transform="translate(17.600000, 0.000000)" fill="url(#linearGradient-3)">
+                        <polygon id="Polygon" transform="translate(5.237247, 5.700405) scale(-1, 1) rotate(-180.000000) translate(-5.237247, -5.700405) " points="9.9757085 10.3319838 10.4744939 0 1.26574414e-14 11.4008097"></polygon>
+                    </g>
+                    <g id="Top-Mid" transform="translate(7.125506, 0.000000)">
+                        <polygon id="Polygon" fill="#FEFBED" transform="translate(10.474494, 5.700405) rotate(-180.000000) translate(-10.474494, -5.700405) " points="10.4744939 11.4008097 20.9489879 1.71824768e-13 6.32872072e-14 -2.53148829e-14"></polygon>
+                        <polygon id="Polygon" fill="url(#radialGradient-4)" transform="translate(10.474494, 5.557895) rotate(-180.000000) translate(-10.474494, -5.557895) " points="10.4744939 11.1157895 20.3789474 2.58718103e-13 0.570040486 -1.26574414e-14"></polygon>
+                    </g>
+                    <g id="Top-Side-Left" transform="translate(0.000000, 1.068826)">
+                        <polygon id="Polygon" fill="#FEE693" transform="translate(3.812146, 5.165992) rotate(-180.000000) translate(-3.812146, -5.165992) " points="-4.43010451e-14 10.3319838 3.91902834 5.13036437 7.6242915 1.77710478e-13 0.142510121 -1.26574414e-14"></polygon>
+                        <polygon id="Polygon" fill="url(#linearGradient-5)" transform="translate(3.812146, 5.165992) rotate(-180.000000) translate(-3.812146, -5.165992) " points="-4.43010451e-14 10.3319838 7.6242915 3.79723243e-14 0.498785425 0.285020243"></polygon>
+                    </g>
+                    <g id="Top-Side-Right" transform="translate(31.387854, 6.234818) scale(-1, 1) translate(-31.387854, -6.234818) translate(27.575709, 1.068826)">
+                        <polygon id="Polygon" fill="#FEE693" transform="translate(3.812146, 5.165992) rotate(-180.000000) translate(-3.812146, -5.165992) " points="-1.26574414e-14 10.3319838 3.91902834 5.13036437 7.6242915 1.52395595e-13 0.142510121 -3.79723243e-14"></polygon>
+                        <polygon id="Polygon" fill="url(#linearGradient-5)" transform="translate(3.812146, 5.165992) rotate(-180.000000) translate(-3.812146, -5.165992) " points="-6.32872072e-14 10.3319838 7.6242915 3.79723243e-14 0.498785425 0.285020243"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

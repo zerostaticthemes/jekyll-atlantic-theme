@@ -12,12 +12,13 @@
   </head>
   <body class="page {{page.bodyClass}}">
     {% include mobile-menu.html %}
-    <div class="container mx-auto px-6 md:px-4">
-      {% include header.html %}
+    {% include header.html %}
+    <div class="container px-6 mx-auto md:px-4">
       {{content}}
-      {% include footer.html %}
     </div>
+    {% include footer.html %}
     {% include google-analytics.html %}
     <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
   </body>
 </html>
