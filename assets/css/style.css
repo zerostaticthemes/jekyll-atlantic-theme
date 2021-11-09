@@ -39,3 +39,30 @@
 .dev * {
 	@apply border border-red-500;
 }
+
+@layer utilities {
+  .btn-gradient {
+    @apply text-white bg-gradient-to-r from-yellow-400 to-red-500;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+  .btn-gradient-line {
+    @apply text-white bg-gradient-to-r from-yellow-400 to-red-500;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+  .border-gradient-br-blue-green-gray-900 {
+    background: linear-gradient(to right, #18181b, #18181b), linear-gradient(to bottom right, #60a5fa, #4ade80);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+
+  .hover\:border-gradient-tl-blue-green-gray-900:hover {
+      background: linear-gradient(to right, #18181b, #18181b), linear-gradient(to top left, #60a5fa, #4ade80);
+      
+  }
+
+  .gradient-border-3 {
+      border: 3px solid transparent;
+  }
+}
