@@ -6,7 +6,7 @@ layout: default
   <!-- {% include heading.html heading=page.heading %} -->
   {% for post in site.posts limit:1 %}
 	<section class="flex flex-col items-center w-full pt-6 text-gray-900 group md:pt-12 md:space-x-6 md:flex-row ">
-		<div class="relative transition duration-500 ease-in-out transform group-hover:shadow-lg group-hover:-translate-y-2 group-hover:opacity-70 ">
+		<div data-aos="fade-up" data-aos-delay="100" class="relative transition duration-500 ease-in-out transform group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:opacity-70 ">
 			<img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
       <div class="absolute top-0 p-5">
         {% for category in post.categories %}
@@ -14,23 +14,23 @@ layout: default
         {% endfor %}
       </div>
 		</div>
-		<a class="group" href="{{ post.url | relative_url }}">
+		<a data-aos="fade-up" data-aos-delay="200" href="{{ post.url | relative_url }}">
 			<div class="relative max-w-lg py-6 space-y-6 md:p-6 ">
 				<div class="space-y-2">
-          <div class="flex items-center">
+          <div class="flex items-center"> 
             {% if post.authors %}
               <div class="flex ml-4">
                 {% for author in post.authors %}
                   {% include author.html
-              author=author
-              show_author_name=false
-              %}
+                    author=author
+                    show_author_name=false
+                  %}
                 {% endfor %}
               </div>
             {% endif %}
             <div class="text-sm font-medium text-gray-700">{{ post.date | date_to_long_string }}</div>
           </div>
-					<div class="inline-block text-2xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
+					<div class="inline-block text-3xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
 				</div>
 				<div class="text-gray-500">
 					<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
@@ -48,7 +48,7 @@ layout: default
 	</section>
   {% endfor %}
 
-<main class="grid gap-12 py-6 md:grid-cols-2 ">
+<main class="grid gap-8 py-6 md:grid-cols-2" data-aos="fade-up" data-aos-delay="400">
   {% for post in site.posts limit:6 offset:1 %}
     {% include summary.html post=post %}
   {% endfor %}

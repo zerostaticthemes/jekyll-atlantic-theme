@@ -40,6 +40,7 @@ module.exports = {
     extend: {
       grayscale: ["hover", "focus"],
       margin: ['last'],
+      translate: ['active', 'group-hover'],
     },
     container: [],
   },

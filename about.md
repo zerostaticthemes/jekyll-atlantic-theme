@@ -1,41 +1,43 @@
 ---
 layout: basic
-title: "About Us"
+title: "Acerca de mi"
 date: 2018-11-28T15:15:34+10:00
 permalink: "/about/"
-description: "Business plan hackathon handshake responsive web design."
-image: "https://source.unsplash.com/Dq5P6eWZXNY/1600x900"
+description: "Diseñador digital viviendo en Nueva Zelanda"
+image: "/assets/img/articles/about-pic.jpg"
 ---
 
-# Creating Modern Websites
+## Un poco sobre mi
 
-Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+You don't speak Spanish, no problem: [English Version](https://arielcerda.com/about-en/)
 
-Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
+Hola y bienvenido, mi nombre es Ariel y soy un ‘diseñador’ Chileno que en el año 2018 vendió todo para mudarse al [país de la nube blanca](https://es.wikipedia.org/wiki/Aotearoa), Nueva Zelanda.
 
-## What is Web Design?
+En lo profesional llevo más de 8 años trabajando en diseño enfocado en el área digital, edición de video, pero principalmente en desarrollo web donde he tenido el placer de colaborar con grandes equipos en una variedad de industrias. Si quieres curiosear puedes revisar mi [linkedin](https://www.linkedin.com/in/arielcerdahernandez/) o revisar mi [portafolio](https://arielcerda.com/portfolio).
 
-User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+Mis herramientas preferidas son:
 
-## Front-end Development
+- Para diseñar [Figma](https://www.figma.com/)
+- Para escribir código [Visual Studio Code](https://code.visualstudio.com/)
+- Framework favorito [Tailwindcss](https://tailwindcss.com/)
+- para editar videos [Final Cut Pro](https://www.apple.com/final-cut-pro/)
+- Para organizar mi vida [Notion.so](https://www.notion.so/)
 
-The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
+### Pero la vida no es solo trabajo, ¿verdad?
 
-> As a UX designer, you should consider the Why, What and How of product use.
+Dentro de los muchos hobbies que tengo, disfruto pasar el tiempo libre jugando videojuegos, viendo buenas películas, reuniéndome con amigos y cuando la inspiración me golpea me gusta hacer videos en [YouTube](https://www.youtube.com/channel/UCWip2TrjNMXb0kg6LWbsNzw?sub_confirmation=1) contando mi experiencia de como es vivir en el extranjero.
 
-Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
+Si tienes dudas, envíame un mensaje en [Instagram](https://www.instagram.com/smilesharks/), y estaré feliz de contestarte, pero debes ser paciente porque Nueva Zelanda está en el futuro y los mensajes demoran en llegar.
 
-## Design Systems
+### Acerca del blog
 
-A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
+El objetivo de este blog es documentar y compartir mis experiencias y experimentar.
 
-## Process
+Fue creado utilizando tecnología gratuita:
 
-There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
+Para hospedar el sitio utilizo [Netlify](https://www.netlify.com/)
 
-- User experience research
-- Visual design and illustration
-- Programming and coding
+Para el desarrollo [Jekyll](https://jekyllrb.com/) 4.1+ [Tailwind CSS](https://tailwindcss.com/docs) v2.2+ [PostCSS](https://postcss.org/) 8.3+
+y la estructura esta basada en el tema **[Jekyll Atlantic](https://github.com/zerostaticthemes/jekyll-atlantic-theme)** que luego personalice.
 
-
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+Esta es la versión número 4.2 del blog puedes revisar el código en [Github](https://github.com/Smilesharks/jekyll-atlantic-theme)

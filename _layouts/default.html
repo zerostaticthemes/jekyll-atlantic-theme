@@ -9,6 +9,7 @@
 
     <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
     <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="page {{page.bodyClass}}">
     {% include mobile-menu.html %}
@@ -18,7 +19,5 @@
     </div>
     {% include footer.html %}
     {% include google-analytics.html %}
-    <script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
   </body>
 </html>
