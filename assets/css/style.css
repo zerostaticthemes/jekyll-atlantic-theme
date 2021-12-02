@@ -8,6 +8,10 @@
 @import "assets/css/custom.css";
 @import "assets/css/syntax/monokai";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .heading {
     em,
