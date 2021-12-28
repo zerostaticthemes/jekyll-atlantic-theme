@@ -16,6 +16,15 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
+    - name: Update baseurl in _config.yaml
+      uses: fjogeleit/yaml-update-action@master
+      with:
+        valueFile: '_config.yaml'
+        propertyPath: 'baseurl'
+        value: /jekyll-atlantic-theme/
+        commitChange: false
+        updateFile: true
+      
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
