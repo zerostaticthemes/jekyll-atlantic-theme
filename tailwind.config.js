@@ -1,11 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [
-    "./_includes/**/*.html",
-    "./_layouts/**/*.html",
-    "./blog/index.html"
-  ],
+  purge: ["./_site/**/*.html", "./_includes/**/*.html", "./_layouts/**/*.html", "./blog/index.html", "./*.html"],
   darkMode: false,
   theme: {
     screens: {
@@ -13,16 +9,14 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-    }
+    },
   },
   variants: {
     extend: {
       grayscale: ["hover", "focus"],
-      margin: ['last']
+      margin: ["last"],
     },
     container: [],
   },
-  plugins: [
-    require("@tailwindcss/typography")
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
