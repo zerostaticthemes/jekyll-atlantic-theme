@@ -19,7 +19,7 @@ jobs:
     - name: Update baseurl in _config.yaml
       uses: fjogeleit/yaml-update-action@master
       with:
-        valueFile: '_config.yaml'
+        valueFile: '_config.yml'
         propertyPath: 'baseurl'
         value: /jekyll-atlantic-theme/
         commitChange: false
