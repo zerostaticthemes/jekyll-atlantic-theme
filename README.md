@@ -69,7 +69,7 @@ bundle exec jekyll build
 
 ### Netlify
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml`
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-atlantic-theme)
 
