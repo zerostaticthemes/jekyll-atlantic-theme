@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -12,7 +13,7 @@
   },
   "[html]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": false
     }
