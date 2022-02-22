@@ -1,8 +1,11 @@
 # Jekyll Atlantic - A Jekyll Tailwind Theme
 
-Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
+Atlantic is a Jekyll Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
+[Live Demo](https://jekyll-atlantic.netlify.app/) | 
+[Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
+
+<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
@@ -78,13 +81,22 @@ This theme has been tested to work with Github Pages (and Github Project Pages).
 
 For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme would have `baseurl: "/jekyll-atlantic-theme/"`
 
-### Credits
-
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
+## Extras
 
 ### License
 
-This theme is open source under the MIT license. 
+- Don't create ports or new versions of this theme without asking me
+- You can't re-distribute or re-sell this theme as your own template
 
-> Please do not create ports of this theme. You can't re-distribute or re-sell this theme as a theme, stock, in a tool or as a template.
+### Credits 
+
+- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
+- Stock images by Unsplash - https://unsplash.com/
+- Feature icons by Noun Project - https://thenounproject.com/
+
+### Other Jekyll Themes by Zerostatic
+
+- [Jekyll Serif](https://github.com/zerostaticthemes/jekyll-serif-theme)
+- [Jekyll Advance](https://www.zerostatic.io/theme/jekyll-advance/)
+
+🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
