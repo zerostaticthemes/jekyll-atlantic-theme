@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="page {{page.bodyClass}}">
+    {% include mobile-menu.html %}
+    {% include header.html %}
+      {{content}}
+    {% include footer.html %}
+    {% include google-analytics.html %}
+  </body>
+</html>

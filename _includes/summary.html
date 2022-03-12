@@ -1,41 +1,14 @@
-<div class="flex flex-col w-full md:flex-row group">
 
-  {% if post.thumbnail %}
-    <div class="md:mr-4 md:mb-0 md:w-4/12 ">
-      <a class="bg-gray-100 " href="{{ post.url | relative_url }}">
-        <img class="transition duration-500 ease-in-out transform rounded group-hover:shadow-lg group-hover:-translate-y-1 group-hover:opacity-70" alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}"/></a>
-    </div>
-  {% endif %}
-
-  <div class="flex-1">
-    <div class="flex items-center">
-      {% if post.authors %}
-        <div class="flex ml-4">
-          {% for author in post.authors %}
-            {% include author.html
-        author=author
-        show_author_name=false
-        %}
-          {% endfor %}
-        </div>
-      {% endif %}
-      <div class="text-sm font-medium text-gray-700">{{ post.date | date_to_long_string }}</div>
-    </div>
-
-    <a href="{{ post.url | relative_url }}" class="hover:text-yellow-500">
-      <h2 class="mb-1 text-2xl font-semibold">{{ post.title }}</h2>
-    </a>
-
-    <p class="mb-4 text-base font-light text-gray-600">{{ post.description }}</p>
-
-    {% if post.categories %}
-      <div class="mb-2">
-        {% for category in post.categories %}
-          {% include category-badge.html %}
-        {% endfor %}
+  <a class="" href="{{ post.url | relative_url }}">
+    <div class="flex flex-col w-full space-y-4 group">
+    {% if post.thumbnail %}
+      <div class="md:w-full ">
+        <img class="transition duration-500 ease-in-out transform rounded-2xl group-hover:shadow-2xl shadow-xl group-hover:-translate-y-1" alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}"/>
       </div>
     {% endif %}
-
-
-  </div>
-</div>
+      
+      <div class="text-sm font-medium text-gray-700 mb-2">{{ post.date | date_to_long_string }}</div>
+      <h2 class="group-hover:text-yellow-500 text-2xl font-semibold">{{ post.title }}</h2>
+      <div class="text-base font-light text-gray-600">{{ post.description }}</div>
+    </div>
+  </a>

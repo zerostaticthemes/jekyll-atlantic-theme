@@ -1,5 +1,5 @@
 ---
-title: ⚽ SMART TV APP
+title: SMART TV APP
 category: Ux-ui
 description: Estadio CDF, is a webOS application that allows you to enjoy the contents of CDF Live and On Demand (VOD) through streaming.
 client: Canal del Fútbol

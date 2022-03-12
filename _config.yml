@@ -18,7 +18,7 @@ disqus: smilesharks
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: "Ariel Cerda <strong>Blog</strong>"
+  logo_desktop_text: "Ariel Cerda"
   logo_mobile_image: assets/images/logo/logo-mobile.svg
   logo_mobile_text: ""
   logo_desktop_height: "36px"

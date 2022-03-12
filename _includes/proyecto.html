@@ -1,82 +1,84 @@
-<section class="space-y-64 " id="portfolio">
+<section class="space-y-64 container mx-auto" id="portfolio">
     {% for projects in site.projects %} {{ projects.content | markdownify }}
     <div class="space-y-32 ">
-        <div class="grid w-full gap-12 mx-auto md:grid-cols-4 max-w-none prose-yellow">
-            <div class="md:space-y-2 md:col-span-2" data-aos="fade-up" data-aos-delay="0">
-                <span class="text-sm font-light text-gray-300">{{ projects.category }}</span>
-                <h3 class="relative z-10 text-5xl font-bold">{{ projects.title }}</h3>
-                <div class="relative z-0 w-full md:max-w-md" >
-                    <div class="absolute top-0 bg-red-500 rounded-full w-36 h-36 md:w-72 md:h-72 -left-2 md:-left-4 filter blur-2xl opacity-80 animate-blob"></div>
-                    <div class="absolute top-0 bg-yellow-500 rounded-full w-36 h-36 md:w-72 md:h-72 -right-2 md:-right-4 filter blur-2xl opacity-80 animate-blob animation-delay-2000"></div>
-			        <div class="absolute bg-pink-500 rounded-full w-36 h-36 md:w-72 md:h-72 -bottom-8 left-10 md:left-20 filter blur-2xl opacity-80 animate-blob animation-delay-4000"></div>
-                    <img data-aos="flip-left" data-aos-delay="100" class="relative md:max-w-md" src="{{ projects.featureimg | prepend: site.url }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+        <div class="grid items-center w-full gap-12 mx-auto md:grid-cols-4 max-w-none prose-yellow">
+            <div class=" md:space-y-24 md:col-span-2" data-aos="fade-up" data-aos-delay="200">
+                <!-- <span class="text-sm font-light text-gray-300">{{ projects.category }}</span> -->
+                <div class="space-y-8">
+                    <h3 class="relative z-10 text-5xl font-bold">{{ projects.title }}</h3>
+                    <div class="flex-1 space-y-2">
+                        <div class="prose">{{ projects.description }}</div>
+                        
+                        {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
+                            <a class="flex flex-row items-center w-auto space-x-2 text-yellow-500 underline hover:text-yellow-700" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">
+                                <div class="">Preview</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>                                
+                            </a>
+                        {% else %}
+                        <!-- <div class="flex flex-row items-center text-gray-400 cursor-not-allowed" alt="Demo unavailable">
+                            <div class="link">Demo unavailable</div>                        
+                        </div>-->
+                        {% endif %}
+                        
+                    </div>
                 </div>
-                <div class="pt-12 space-y-2">
-                    <span class="text-sm font-light text-gray-400">Demo</span>
-                    {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
 
-                        <a class="flex flex-row items-center space-x-4 text-yellow-500 underline hover:text-yellow-700" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">
-                            <div class="">Preview</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>                                
-                        </a>
-                    {% else %}
-                    <div class="flex flex-row items-center text-gray-400 cursor-not-allowed" alt="Demo unavailable">
-                        <div class="link">Demo unavailable</div>                        
-                    </div>                            
-                    {% endif %}
-                </div>
-            </div>
-            <div class="prose md:space-y-6 md:col-span-2" data-aos="fade-up" data-aos-delay="200">
-                <div class="flex-1 space-y-2">
-                    <span class="text-sm font-light text-gray-400">Description</span>
-                    <div class="text-base">{{ projects.description }}</div>
-                </div>
-                <div class="md:flex md:space-x-6">
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">The problem</span>
-                        <div class="m-0">{{ projects.problem }}</div>
-                    </div>
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">The goal</span>
-                        <div class="m-0">{{ projects.goal }}</div>
-                    </div>
-                </div>
-                <div class="md:flex md:space-x-6">
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">Client</span>
-                        <div>{{ projects.client }}</div>
-                    </div>
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">Platform</span>
-                        <div>{{ projects.platform }}</div>
-                    </div>
-                </div>
-                <div class="md:flex md:space-x-6">
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">Agency</span>
-                        <div>{{ projects.agency }}</div>
-                    </div>
-                    <div class="flex-1 space-y-2">
-                        <span class="text-sm font-light text-gray-400">Role</span>
-                        <div>{{ projects.role }}</div>
+                <div class="space-y-8">
+                    <div class="grid grid-cols-2 gap-x-24 gap-y-12 ">
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">The problem</span>
+                            <div class="prose prose-sm">{{ projects.problem }}</div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">The goal</span>
+                            <div class="prose prose-sm">{{ projects.goal }}</div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">Client</span>
+                            <div class="prose prose-sm">{{ projects.client }}</div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">Platform</span>
+                            <div class="prose prose-sm">{{ projects.platform }}</div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">Agency</span>
+                            <div class="prose prose-sm">{{ projects.agency }}</div>
+                        </div>
+                        <div class="flex-1 space-y-2">
+                            <span class="text-xl font-bold text-black">Role</span>
+                            <div class="prose prose-sm">{{ projects.role }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="md:space-y-2 md:col-span-2" data-aos="fade-up" data-aos-delay="0">
+                <div class="relative z-0 w-full " >
+                    <div class="absolute top-0 bg-red-500 rounded-full w-36 h-36 md:w-96 md:h-96 -left-2 md:-left-4 filter blur-2xl opacity-60 animate-blob"></div>
+                    <div class="absolute top-0 bg-yellow-500 rounded-full w-36 h-36 md:w-96 md:h-96 -right-2 md:-right-4 filter blur-2xl opacity-60 animate-blob animation-delay-2000"></div>
+			        <div class="absolute bg-pink-500 rounded-full w-36 h-36 md:w-96 md:h-96 -bottom-8 left-10 md:left-20 filter blur-2xl opacity-60 animate-blob animation-delay-4000"></div>
+                    <img data-aos="fade-left" data-aos-delay="100" class="relative" src="{{ projects.featureimg | prepend: site.url }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+                </div>
+            </div>
+
         </div>
             <!-- Multimedia -->
-        <div class="flex flex-col space-y-12 sm:col-span-2">
+        <div class="flex flex-col space-y-24 sm:col-span-2">
             <!-- Imagenes -->
-            <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
-                <h6 class="text-4xl font-bold ">Previews design / Concept</h6>
-                <div x-data="{}"  class="grid grid-cols-1 gap-6 md:gap-12 sm:grid-cols-4">
+            <div class="space-y-24" data-aos="fade" data-aos-delay="100">
+                <div class="text-center space-y-4">
+                    <h3 class=" text-sm font-light">{{ projects.title }}</h3>
+                    <h6 class="text-4xl font-bold ">Previews design / Concept</h6>
+                </div>
+                <div x-data="{}"  class="grid grid-cols-1 gap-6 md:gap-6 sm:grid-cols-4">
                     {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
                     {% for image in site.static_files %}
                         {% if image.path contains ipath %}
                             <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="cursor-pointer tile">
                                 <div class=" aspect-w-16 aspect-h-9" >
-                                    <img alt="Placeholder" class="object-cover w-full" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
+                                    <img alt="Placeholder" class="object-cover rounded-xl bg-gray-200 w-full" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
                                 </div>
                             </a>
                         {% endif %}
@@ -85,8 +87,11 @@
             </div>
             <!-- Video -->
             {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
-            <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
-                <h6 class="text-4xl">Video</h6>
+            <div class="space-y-24" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center space-y-4">
+                    <h3 class=" text-sm font-light">{{ projects.title }}</h3>
+                    <h6 class="text-4xl font-bold ">Video</h6>
+                </div>
                 <div class="flex flex-col">
                     <div class="w-full mx-auto space-y-6 divide-y-4 divide-gray-100 divide-solid">
                         <video autoplay muted loop class="w-full" controls>

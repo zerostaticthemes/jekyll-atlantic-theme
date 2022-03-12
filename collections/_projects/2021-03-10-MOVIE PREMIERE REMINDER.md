@@ -1,5 +1,5 @@
 ---
-title: 🍿 MOVIE PREMIERE REMINDER
+title: MOVIE PREMIERE REMINDER
 category: Dev
 description: Moviedates is a tool that allows you to create a reminder of how much time is left until the premiere of your next favorite movie.
 client: Personal project

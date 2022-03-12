@@ -1,0 +1,10 @@
+{
+  "name": "jekyll-postcss",
+  "version": "0.5.0",
+  "repository": "git@github.com:mhanberg/jekyll-postcss.git",
+  "author": "Mitchell Hanberg <mitch@mitchellhanberg.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
