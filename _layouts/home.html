@@ -4,8 +4,8 @@ layout: full-width
 <!-- Hero -->
 <div class="space-y-12 ">
   {% for post in site.posts limit:1 %}
-  <section class="bg-black pt-20 pb-48">
-    <div class="container mx-auto">
+  <section class="bg-black md:pt-20 py-8 md:pb-48">
+    <div class="container px-6 mx-auto md:px-0">
       <div class="flex flex-col items-center w-full text-white group md:space-x-6 md:flex-row ">
         <div data-aos-delay="100" class="relative transition duration-500 ease-in-out transform group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:opacity-70 ">
           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
@@ -50,7 +50,7 @@ layout: full-width
     </div>
   </section>
   {% endfor %}
-  <div class="container px-6 mx-auto md:px-0 transform -translate-y-44 ">
+  <div class="container px-6 mx-auto md:px-0 transform md:-translate-y-44 ">
       <main class="grid gap-16 py-6 md:grid-cols-3">
         {% for post in site.posts limit:6 offset:1 %}
           {% include summary.html post=post %}

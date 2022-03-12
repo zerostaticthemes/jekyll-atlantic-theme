@@ -1,6 +1,8 @@
-<section class="py-24 text-black ">
-  <div class="container max-w-screen-xl px-4 mx-auto">
-  <h3>Other proyects</h3>
+<section class=" text-black ">
+  <div class="container space-y-24 max-w-screen-xl px-4 mx-auto">
+  <div class="text-center space-y-4">
+      <h6 class="text-4xl font-bold ">Other proyects</h6>
+  </div>
   <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
     {% for minipro in site.minipro %} {{ minipro.content | markdownify }}
     <a class="space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="{{ minipro.link }}">

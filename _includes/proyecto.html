@@ -1,8 +1,8 @@
-<section class="space-y-64 container mx-auto" id="portfolio">
+<section class="space-y-12 md:space-y-64 container px-6 mx-auto md:px-0" id="portfolio">
     {% for projects in site.projects %} {{ projects.content | markdownify }}
-    <div class="space-y-32 ">
+    <div class="md:space-y-32 space-y-16  ">
         <div class="grid items-center w-full gap-12 mx-auto md:grid-cols-4 max-w-none prose-yellow">
-            <div class=" md:space-y-24 md:col-span-2" data-aos="fade-up" data-aos-delay="200">
+            <div class=" order-last md:order-first md:space-y-24 space-y-12 md:col-span-2" data-aos="fade-up" data-aos-delay="200">
                 <!-- <span class="text-sm font-light text-gray-300">{{ projects.category }}</span> -->
                 <div class="space-y-8">
                     <h3 class="relative z-10 text-5xl font-bold">{{ projects.title }}</h3>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="space-y-8">
-                    <div class="grid grid-cols-2 gap-x-24 gap-y-12 ">
+                    <div class="grid md:grid-cols-2 gap-x-24 gap-y-12 ">
                         <div class="flex-1 space-y-2">
                             <span class="text-xl font-bold text-black">The problem</span>
                             <div class="prose prose-sm">{{ projects.problem }}</div>
@@ -56,9 +56,9 @@
             </div>
             <div class="md:space-y-2 md:col-span-2" data-aos="fade-up" data-aos-delay="0">
                 <div class="relative z-0 w-full " >
-                    <div class="absolute top-0 bg-red-500 rounded-full w-36 h-36 md:w-96 md:h-96 -left-2 md:-left-4 filter blur-2xl opacity-60 animate-blob"></div>
-                    <div class="absolute top-0 bg-yellow-500 rounded-full w-36 h-36 md:w-96 md:h-96 -right-2 md:-right-4 filter blur-2xl opacity-60 animate-blob animation-delay-2000"></div>
-			        <div class="absolute bg-pink-500 rounded-full w-36 h-36 md:w-96 md:h-96 -bottom-8 left-10 md:left-20 filter blur-2xl opacity-60 animate-blob animation-delay-4000"></div>
+                    <div class="absolute top-0 bg-red-500 rounded-full w-48 h-48 md:w-96 md:h-96 -left-2 md:-left-4 filter blur-2xl opacity-60 animate-blob"></div>
+                    <div class="absolute top-0 bg-yellow-500 rounded-full w-48 h-48 md:w-96 md:h-96 -right-2 md:-right-4 filter blur-2xl opacity-60 animate-blob animation-delay-2000"></div>
+			        <div class="absolute bg-pink-500 rounded-full w-48 h-48 md:w-96 md:h-96 -bottom-8 left-10 md:left-20 filter blur-2xl opacity-60 animate-blob animation-delay-4000"></div>
                     <img data-aos="fade-left" data-aos-delay="100" class="relative" src="{{ projects.featureimg | prepend: site.url }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
                 </div>
             </div>
@@ -67,8 +67,8 @@
             <!-- Multimedia -->
         <div class="flex flex-col space-y-24 sm:col-span-2">
             <!-- Imagenes -->
-            <div class="space-y-24" data-aos="fade" data-aos-delay="100">
-                <div class="text-center space-y-4">
+            <div class="md:space-y-24 space-y-12" data-aos="fade" data-aos-delay="100">
+                <div class="md:text-center space-y-4">
                     <h3 class=" text-sm font-light">{{ projects.title }}</h3>
                     <h6 class="text-4xl font-bold ">Previews design / Concept</h6>
                 </div>
@@ -87,8 +87,8 @@
             </div>
             <!-- Video -->
             {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
-            <div class="space-y-24" data-aos="fade-up" data-aos-delay="100">
-                <div class="text-center space-y-4">
+            <div class="space-y-12 md:space-y-24" data-aos="fade-up" data-aos-delay="100">
+                <div class="md:text-center space-y-4">
                     <h3 class=" text-sm font-light">{{ projects.title }}</h3>
                     <h6 class="text-4xl font-bold ">Video</h6>
                 </div>
@@ -121,18 +121,18 @@
 <!-- modal-img-modal -->
 <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
     <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
-        <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="fixed inset-0 z-50 flex items-center justify-center w-full p-2 overflow-hidden bg-black bg-opacity-75 h-100">
-        <div @click.away="imgModal = ''" class="flex flex-col max-w-5xl max-h-full overflow-auto">
+        <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="fixed inset-0 z-50 flex items-center justify-center w-full md:p-2 overflow-hidden bg-black bg-opacity-75 md:h-100">
+        <div @click.away="imgModal = ''" class="flex flex-col md:max-w-5xl max-h-full overflow-auto">
             <div class="z-50">
-            <button @click="imgModal = ''" class="float-right pt-2 pr-2 text-white outline-none focus:outline-none">
+            <button @click="imgModal = ''" class="float-right pt-2 md:pr-2 text-white outline-none focus:outline-none">
                 <svg class="text-white fill-current " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                 <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
                 </path>
                 </svg>
             </button>
             </div>
-            <div class="p-2">
-            <img :alt="imgModalSrc" class="object-contain rounded-lg h-1/2-screen" :src="imgModalSrc">
+            <div class="md:p-2">
+            <img :alt="imgModalSrc" class="object-contain w-full rounded-lg md:h-1/2-screen" :src="imgModalSrc">
             <p x-text="imgModalDesc" class="py-2 text-center text-white "></p>
             </div>
         </div>
