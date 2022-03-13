@@ -7,9 +7,14 @@
 
 @import "assets/css/custom.css";
 @import "assets/css/syntax/monokai";
+@import "assets/css/typografy";
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 @layer components {

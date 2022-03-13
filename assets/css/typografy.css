@@ -1,0 +1,34 @@
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:400;
+    src:url("/assets/fonts/PlusJakartaSans-Regular.woff") format("woff2")
+}
+
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:400;
+    font-style:italic;
+    src:url("/assets/fonts/PlusJakartaSans-Italic.woff") format("woff2")
+}
+
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:500;
+    src:url("/assets/fonts/PlusJakartaSans-Medium.woff") format("woff2")
+}
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:500;
+    font-style:italic;
+    src:url("/assets/fonts/PlusJakartaSans-MediumItalic.woff") format("woff2")
+}
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:600;
+    src:url("/assets/fonts/PlusJakartaSans-SemiBold.woff") format("woff2")
+}
+@font-face{
+    font-family:Plus Jakarta Sans;
+    font-weight:700;
+    src:url("/assets/fonts/PlusJakartaSans-Bold.woff") format("woff2")
+}

@@ -2,7 +2,7 @@
 layout: post
 title: Por qué la gente se va de Nueva Zelanda
 authors: ["Ariel Cerda"]
-date:   2022-03-13 22:05:50 GMT+12
+date:   2022-03-13 10:05:50 GMT+12
 categories: ["Nueva-Zelanda"]
 image: 'https://img.youtube.com/vi/BkFseBehp5s/maxresdefault.jpg'
 thumbnail: "https://img.youtube.com/vi/BkFseBehp5s/maxresdefault.jpg"
