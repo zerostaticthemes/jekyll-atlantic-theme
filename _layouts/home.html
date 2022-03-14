@@ -31,7 +31,7 @@ layout: full-width
                 {% endif %}
                 <div class="text-sm font-medium text-gray-300">{{ post.date | date_to_long_string }}</div>
               </div>
-              <div class="inline-block text-3xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
+              <div class="inline-block text-xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
             </div>
             <div class="text-gray-300">
               <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>

@@ -1,9 +1,9 @@
 baseurl: "/"
 permalink: pretty
-title: Ariel Cerda Hernandez - Blog
+title: Ariel Cerda Hernandez
 keywords: diseñador, designer, UX, UI
 description: >- # this means to ignore newlines until "baseurl:"
-  I am an UI designer  Video editor, content creator, and passionate geek who loves technology.
+  Digital designer.
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -29,7 +29,7 @@ logo:
 seo:
   meta_twitter_site: "@smilesharks"
   meta_twitter_creator: "@smilesharks"
-  meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
+  meta_og_image: "https://arielcerda.com/assets/img/ariel-cerda.jpg"
 
 author:
   name: Ariel
