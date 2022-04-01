@@ -2,7 +2,7 @@
 layout: full-width
 ---
 <!-- Hero -->
-<div class="space-y-12 ">
+<div class="-space-y-32 ">
   {% for post in site.posts limit:1 %}
   <section class="bg-black md:pt-20 py-8 md:pb-48">
     <div class="container px-6 mx-auto md:px-0">
@@ -50,15 +50,15 @@ layout: full-width
     </div>
   </section>
   {% endfor %}
-  <div class="container px-6 mx-auto md:px-0 transform md:-translate-y-44 ">
-      <main class="grid gap-16 py-6 md:grid-cols-3">
+  <div class="container px-6 mx-auto md:px-0">
+    <main class="grid gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-3">
         {% for post in site.posts limit:6 offset:1 %}
           {% include summary.html post=post %}
         {% endfor %}
       </main>
       {% include paginator.html %}
-      <div class="mb-12">
+
         {% include cta.html %}
-      </div>
+
   </div>
 </div>
