@@ -2,7 +2,7 @@
 layout: post
 title: Consejos que me hubiera gustado escuchar antes de Emigrar a Nueva Zelanda
 authors: ["Ariel Cerda"]
-date:   2022-04-02 12:41:50 GMT+13
+date:   2022-03-28 12:41:50 GMT+13
 categories: ["Nueva-Zelanda"]
 image: 'https://img.youtube.com/vi/M_iol1RhPXw/maxresdefault.jpg'
 thumbnail: "https://img.youtube.com/vi/M_iol1RhPXw/maxresdefault.jpg"
