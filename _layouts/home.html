@@ -2,12 +2,17 @@
 layout: full-width
 ---
 <!-- Hero -->
-<div class="-space-y-32 ">
+<div class="md:-space-y-32 -space-y-12 ">
+
   {% for post in site.posts limit:1 %}
   <section class="bg-black md:pt-20 py-8 md:pb-48">
+  
     <div class="container px-6 mx-auto md:px-0">
       <div class="flex flex-col items-center w-full text-white group md:space-x-6 md:flex-row ">
         <div data-aos-delay="100" class="relative transition duration-500 ease-in-out transform group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:opacity-70 ">
+          <div class="relative -z-10 w-full inset-0 hidden md:block  " >
+              <div class="absolute inset-0 bg-gray-500 rounded-full md:w-full md:h-96 filter blur-2xl opacity-40 animate-blob"></div>
+          </div>
           <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
           <div class="absolute top-0 p-5">
             {% for category in post.categories %}
