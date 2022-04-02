@@ -2,7 +2,7 @@
     <h4 class="text-xl font-bold leading-tight text-black">Últimas publicaciones</h4>
     <div class="flex flex-col space-y-6 divide-y divide-gray-600 divide-solid divide-opacity-30">
         {% for post in site.related_posts limit:3 %}
-        <a class="prose post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <a class="prose post-link" href="{{ post.url | prepend: site.relative_url }}">
             <div class="space-y-6 group">
                 <h5 class="mt-6 font-semibold text-gray-600 text-md ">{{ post.title }}</h5>
                 <span class="text-sm text-gray-400 post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>

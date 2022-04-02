@@ -72,7 +72,6 @@ layout: default
     </div>
 
     <!-- LINK -->
-
     <div class="w-full mx-auto sm:mx-auto sm:max-w-xl">
         <a href="http://goo.gl/6DCK5K" target="_blank" class="">
             <div class="flex flex-col items-center w-full p-5 space-y-2 text-red-700 bg-gray-900 border border-gray-700 shadow-2xl rounded-2xl hover:shadow-xl">
@@ -92,7 +91,7 @@ layout: default
         <h4 class="text-xl font-bold leading-tight text-black">Últimas publicaciones</h4>
         <div class="flex flex-col space-y-6 divide-y divide-gray-600 divide-solid divide-opacity-30">
             {% for post in site.posts limit:3 %}
-            <a class=" post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <a class=" post-link" href="{{ post.url | prepend: site.relative_url }}">
                 <div class="flex flex-row items-center space-x-4 group">
                     <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative  max-h-16 rounded-lg sm:object-cover " />
                     <div class="space-y-2">
