@@ -1,16 +1,16 @@
 main:
-  - name: "Home"
-    url: "/"
-    weight: 1
+  # - name: "Inicio"
+  #   url: "/"
+  #   weight: 1
   - name: "Blog"
     url: "/blog/"
     weight: 2
   - name: "About"
     url: "/about/"
     weight: 3
-  - name: "Portafolio"
-    url: "/portfolio/"
-    weight: 4
+  # - name: "Portafolio"
+  #   url: "/portfolio/"
+  #   weight: 4
   - name: "Subscribe"
     url: "#subscribe"
     weight: 5

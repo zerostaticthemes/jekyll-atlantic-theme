@@ -1,18 +1,77 @@
 ---
-layout: default
+layout: full-width
 title: "blog"
 heading: "Blog"
+pagination: 
+  enabled: true
 ---
+<!-- Hero -->
 
-<div class="space-y-12">
-  {% include heading.html heading=page.heading %}
-<main class="grid grid-cols-2 gap-12 ">
-  {% for post in paginator.posts limit:6 %}
-    {% include summary.html post=post %}
-  {% endfor %}
-</main>
-{% include paginator.html %}
-  <div class="mb-12">
-    {% include cta.html %}
+<h1 class="sr-only">{{ site.logo.logo_desktop_text }}</h1>
+<div class="md:-space-y-32 -space-y-12 ">
+  {% if paginator.page == 1 %}
+    {% for post in paginator.posts limit:1 %}
+    <section class="bg-black md:pt-20 py-8 md:pb-48">
+    
+      <div class="container px-6 mx-auto md:px-0">
+        <div class="flex flex-col items-center w-full text-white group md:space-x-6 md:flex-row ">
+          <div data-aos-delay="100" class="relative transition duration-500 ease-in-out transform group-hover:shadow-2xl group-hover:-translate-y-2 ">
+            <div class="relative -z-10 w-full inset-0 hidden md:block  " >
+                <div class="absolute inset-0 bg-gray-500 rounded-full md:w-full md:h-96 filter blur-2xl opacity-40 animate-blob"></div>
+            </div>
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
+          </div>
+          <a data-aos-delay="200" href="{{ post.url | relative_url }}">
+            <div class="relative max-w-lg py-6 space-y-6 md:p-6 ">
+              <div class="space-y-2">
+                <div class="flex items-center"> 
+                  {% if post.authors %}
+
+                      {% for author in post.authors %}
+                        {% include author.html
+                          author=author
+                          show_author_name=false
+                        %}
+                      {% endfor %}
+
+                  {% endif %}
+                  <div class="flex space-x-2">
+                    <div class="text-sm font-medium text-gray-300">{{ post.date | date_to_long_string }}</div>
+                    <span class="text-xs font-medium text-yellow-300">//</span>
+                    {% for category in post.categories %}
+                    <div class="text-sm font-medium text-gray-300">{{ category }}</div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <h2 class="inline-block text-xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</h2>
+              </div>
+              <p class="prose text-gray-300">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+              <div href="{{ post.image | prepend: site.baseurl }}" class="relative inline-flex items-center text-lg font-medium text-yellow-500 hover:text-yellow-700">
+                <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-12 ease">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <span class="relative">Leer Mas</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+  {% endif %}
+
+  <div class="container space-y-8 px-6 mx-auto md:px-0{% if paginator.page != 1 %} py-12 {% endif %}">
+    <main class="grid gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-3">
+        {% for post in paginator.posts limit:6 offset:1 %}
+          {% include summary.html post=post %}
+        {% endfor %}
+      </main>
+      <hr>
+      {% include paginator.html %}
+
+      {% include cta.html %}
+
   </div>
 </div>

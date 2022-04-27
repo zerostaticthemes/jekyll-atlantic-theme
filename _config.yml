@@ -2,8 +2,7 @@ baseurl: "/"
 permalink: pretty
 title: Ariel Cerda Hernandez
 keywords: diseñador, designer, UX, UI
-description: >- # this means to ignore newlines until "baseurl:"
-  Digital designer.
+description: Diseñador digital viviendo en Nueva Zelanda
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge

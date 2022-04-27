@@ -7,8 +7,14 @@
       </div>
     {% endif %}
       
-      <div class="sm:text-sm text-xs font-medium text-gray-700 mb-2">{{ post.date | date_to_long_string }}</div>
-      <h2 class="group-hover:text-yellow-500 sm:text-xl text-lg font-semibold">{{ post.title }}</h2>
+    <div class="flex space-x-2">
+      <div class="text-sm font-medium text-gray-600">{{ post.date | date_to_long_string }}</div>
+      <span class="text-xs font-medium text-yellow-600">//</span>
+      {% for category in post.categories %}
+      <div class="text-sm font-medium text-gray-600">{{ category }}</div>
+      {% endfor %}
+    </div>
+      <h3 class="group-hover:text-yellow-500 sm:text-xl text-lg font-semibold">{{ post.title }}</h3>
       <!-- <div class="text-base font-light text-gray-600">{{ post.description }}</div> -->
     </div>
   </a>

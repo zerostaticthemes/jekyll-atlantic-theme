@@ -1,5 +1,5 @@
 {% if paginator.total_pages > 1 %}
-<div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+<div class="flex items-center justify-between sm:px-6">
   <div class="flex-1 flex justify-between sm:hidden">
 
   {% if paginator.previous_page %}
@@ -23,11 +23,11 @@
   <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
     <div>
       <p class="text-sm text-gray-700">
-        Showing page 
+        Mostrando página
         <span class="font-medium">{{  paginator.page  }}</span>
-        of 
+        de 
         <span class="font-medium">{{ paginator.total_pages }}</span>
-        pages
+        páginas
       </p>
     </div>
 

@@ -2,9 +2,7 @@
   {% if page.meta_title %}
     {{ page.meta_title }}
   {% elsif page.title %}
-    {{ page.title }}
-    -
-    {{ site.title}}
+    {{ page.title }} - {{ site.title}}
   {% else %}
     {{ site.title }}
   {% endif %}
@@ -14,6 +12,8 @@
   <meta name="description" content="{{ page.meta_description }}"/>
 {% elsif page.description %}
   <meta name="description" content="{{ page.description }}"/>
+{% else %}
+  <meta name="description" content="{{ site.description }}"/>
 {% endif %}
 
 {% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>

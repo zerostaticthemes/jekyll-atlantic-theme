@@ -1,69 +1,141 @@
 ---
 layout: full-width
 ---
+
+
+
+
 <!-- Hero -->
-<div class="md:-space-y-32 -space-y-12 ">
+<h1 class="sr-only">{{ site.logo.logo_desktop_text }}</h1>
+<div class="md:-space-y-24 -space-y-12 ">
 
-  {% for post in site.posts limit:1 %}
-  <section class="bg-black md:pt-20 py-8 md:pb-48">
-  
+
+  <div class="bg-black py-12">
     <div class="container px-6 mx-auto md:px-0">
-      <div class="flex flex-col items-center w-full text-white group md:space-x-6 md:flex-row ">
-        <div data-aos-delay="100" class="relative transition duration-500 ease-in-out transform group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:opacity-70 ">
-          <div class="relative -z-10 w-full inset-0 hidden md:block  " >
-              <div class="absolute inset-0 bg-gray-500 rounded-full md:w-full md:h-96 filter blur-2xl opacity-40 animate-blob"></div>
-          </div>
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" title="{{ post.title }}" class="relative w-full col-span-3 rounded-lg sm:object-cover sm:h-96" />
-          <div class="absolute top-0 p-5">
-            {% for category in post.categories %}
-              {% include category-badge.html %}
-            {% endfor %}
-          </div>
+    <div class="flex flex-col justify-between mx-auto item lg:flex-row">
+        <div class="flex flex-col items-center justify-center md:w-1/2 ">
+            <div class="space-y-6">
+                <div class="space-y-6 text-white max-w-md" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-5xl font-bold tracking-wide ">Me alegro de que hayas pasado por aquí.</h1>
+                    <p class="text-xl font-light ">Soy diseñador desde hace mas de 8 años, actualmente vivo en Auckalnd, Nueva Zelanda y cada vez que puedo hago videos o escribo sobre mi experiencia</p>
+                    <div class="flex flex-row space-x-4">
+                    <a href="#portfolio" class="relative group">
+                        <div class="absolute inset-0 group-hover:-inset-4  bg-gradient-to-r from-yellow-500 to-pink-500 filter blur-2xl opacity-40 "></div>
+                        <span class="relative inline-flex items-center px-8 py-4 space-x-1 text-white group-hover:text-yellow-500 transition duration-500 rounded-xl shadow-xl hover:shadow bg-black ">View projects</span>
+                    </a>
+                    <a href="/about-en" class="inline-flex items-center px-3 py-2 space-x-1 text-white group-hover:text-yellow-500 bg-black transition duration-500 border border-gray-600 group-hover:border-white group-hover:border-2 rounded-xl shadow-xl hover:shadow ">
+                        <span>About me</span>
+                    </a>
+    
+                    </div>
+                </div>
+            </div>
         </div>
-        <a data-aos-delay="200" href="{{ post.url | relative_url }}">
-          <div class="relative max-w-lg py-6 space-y-6 md:p-6 ">
-            <div class="space-y-2">
-              <div class="flex items-center"> 
-                {% if post.authors %}
+        <div class="relative items-end justify-center hidden md:flex md:w-1/2 ">
+            <svg data-aos="fade-right" data-aos-delay="200" class="absolute text-gray-800 inset-0 object-cover "viewBox="0 0 452 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M415.982 38.4336H378.249V76.1668H415.982V38.4336Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M415.982 189.367H378.249V227.1H415.982V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M453.715 189.367H415.982V227.1H453.715V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M189.583 189.367H151.849V227.1H189.583V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 38.4336H265.049V76.1668H302.782V38.4336Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 189.367H265.049V227.1H302.782V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M415.982 113.9H378.249V151.633H415.982V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M189.583 113.9H151.849V151.633H189.583V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 113.9H265.049V151.633H302.782V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 264.833H265.049V302.566H302.782V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M415.982 76.1667H378.249V113.9H415.982V76.1667Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M453.715 76.1667H415.982V113.9H453.715V76.1667Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M415.982 227.1H378.249V264.833H415.982V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M189.583 227.1H151.849V264.833H189.583V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 76.1667H265.049V113.9H302.782V76.1667Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 227.1H265.049V264.833H302.782V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M189.583 151.633H151.849V189.367H189.583V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M454.096 302.566H416.363V340.3H454.096V302.566Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 151.633H265.049V189.367H302.782V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M302.782 302.566H265.049V340.3H302.782V302.566Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M76.3828 302.566H38.6496V340.3H76.3828V302.566Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M378.249 189.367H340.516V227.1H378.249V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M151.849 189.367H114.116V227.1H151.849V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M38.6494 38.4336H0.916165V76.1668H38.6494V38.4336Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 189.367H227.316V227.1H265.049V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M378.249 113.9H340.516V151.633H378.249V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M151.849 113.9H114.116V151.633H151.849V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 113.9H227.316V151.633H265.049V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 264.833H227.316V302.566H265.049V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M38.6494 264.833H0.916165V302.566H38.6494V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M378.249 227.1H340.516V264.833H378.249V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M151.849 227.1H114.116V264.833H151.849V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 227.1H227.316V264.833H265.049V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M378.249 151.633H340.516V189.367H378.249V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M151.849 151.633H114.116V189.367H151.849V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 151.633H227.316V189.367H265.049V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M265.049 302.566H227.316V340.3H265.049V302.566Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 0.700317H302.782V38.4336H340.516V0.700317Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 189.367H302.782V227.1H340.516V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M114.116 189.367H76.3827V227.1H114.116V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 189.367H189.582V227.1H227.316V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 113.9H302.782V151.633H340.516V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 264.833H302.782V302.566H340.516V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M114.116 264.833H76.3827V302.566H114.116V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 113.9H189.582V151.633H227.316V113.9Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 264.833H189.582V302.566H227.316V264.833Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 76.1667H302.782V113.9H340.516V76.1667Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 227.1H302.782V264.833H340.516V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 76.1667H189.582V113.9H227.316V76.1667Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 227.1H189.582V264.833H227.316V227.1Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M340.516 151.633H302.782V189.367H340.516V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+                <path opacity="0.3" d="M227.316 151.633H189.582V189.367H227.316V151.633Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
+            </svg>
+    
+            <div data-aos="fade-left" class="relative flex max-w-lg ">
+                <div class="absolute bg-gradient-to-r from-yellow-500 to-pink-500 mx-28 my-24 transform -translate-y-12 rotate-6 opacity-30 filter blur-3xl rounded-full inset-0"></div>
+                <img src="../assets/img/profilepic.png" class="relative filter grayscale mt-12 backdrop-contrast-75 inset-0 object-cover " />
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 
-                    {% for author in post.authors %}
-                      {% include author.html
-                        author=author
-                        show_author_name=false
-                      %}
-                    {% endfor %}
 
-                {% endif %}
-                <div class="text-sm font-medium text-gray-300">{{ post.date | date_to_long_string }}</div>
-              </div>
-              <div class="inline-block text-xl font-bold sm:text-3xl">{{ post.title | strip_html | strip_newlines }}</div>
-            </div>
-            <div class="text-gray-300">
-              <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
-            </div>
-            <div href="{{ post.image | prepend: site.baseurl }}" class="relative inline-flex items-center text-lg font-medium text-yellow-500 hover:text-yellow-700">
-              <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-12 ease">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                </svg>
-              </span>
-              <span class="relative">Leer Mas</span>
-            </div>
+  <div class="container space-y-8 mx-auto">
+    <main class="grid gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-4">
+      <div class="group md:flex">
+        <a href="/blog" class="flex items-center align-middle transition duration-500 ease-in-out transform sm:rounded-xl rounded-lg group-hover:shadow-2xl shadow-xl group-hover:-translate-y-1 border border-gray-300 bg-white text-black ">
+          <div class="flex flex-col space-y-4 mx-auto p-12 ">
+          <h3 class="text-2xl font-bold ">Revisa mis ultimos posts</h3>
+          <div class="flex space-x-2 text-yellow-500 group-hover:text-red-500 items-center" >
+            <span class=" transition transform duration-200 ease-in-out no-underline  group-hover:underline">o visita mi blog</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mt-1 transition duration-200 transform ease-in-out group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
           </div>
         </a>
       </div>
-    </div>
-  </section>
-  {% endfor %}
-  <div class="container px-6 mx-auto md:px-0">
-    <main class="grid gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-3">
-        {% for post in site.posts limit:6 offset:1 %}
+        {% for post in site.posts limit:3  %}
           {% include summary.html post=post %}
         {% endfor %}
       </main>
-      {% include paginator.html %}
 
-        {% include cta.html %}
+      <section class=" text-black ">
+        <div class="container space-y-24 pb-8 max-w-screen-xl px-4 mx-auto">
+        <div class="text-center space-y-4">
+            <h6 class="text-4xl font-bold ">Otros proyectos</h6>
+        </div>
+        <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+          {% for minipro in site.minipro %} {{ minipro.content | markdownify }}
+          <a class="space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="{{ minipro.link }}">
+            <div class="relative transition duration-500 ease-in-out shadow-xl hover:shadow-sm">
+              <img class="border border-yellow-500 rounded-lg" src="{{ minipro.img | prepend: site.baseurl }}" alt="{{ minipro.title }}" title="{{ minipro.title }}" />
+            </div>
+            <h2 class="text-sm text-yellow-500">{{ minipro.tag }}</h2>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      </section>
+
+      {% include cta.html %}
 
   </div>
 </div>

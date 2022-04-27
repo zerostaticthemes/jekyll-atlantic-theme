@@ -4,7 +4,39 @@ layout: default
 
 <div class="flex flex-col py-6 md:flex-row md:py-12">
 
-  <div class="w-full pr-12 md:pt-10 md:w-3/12">
+  
+  <div class="w-full space-y-6 md:space-y-12 md:w-8/12">
+    <!-- Titulo -->
+    {% include heading.html heading=page.title description=page.description align="center" date=page.date %}
+    <!-- Video o image  destacada -->
+    <div class="overflow-hidden prose-xl transition duration-300 ease-in-out w-full rounded-md shadow-2xl aspect-w-16 aspect-h-9 sm:flex hover:shadow-lg">
+      {% assign youtubeId = post.youtubeId | strip_newlines %}
+      {% if page.youtubeId == ""  %}
+          <img class="object-cover w-full sm:rounded-xl " width="100%" src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}" />
+          {% else %}
+          {% include youtubePlayer.html id=page.youtubeId %}
+      {% endif %}
+  </div>
+  {% if page.authors %}
+  <div class="flex flex-col pb-3 md:hidden">
+    {% for author in page.authors %}
+      {% include author-large.html
+        author=author
+      %}
+    {% endfor %}
+  </div>
+{% endif %}
+    <div class="prose prose-lg max-w-2xl mx-auto prose-yellow">
+      {{ content }}
+    </div>
+    <div class="space-y-6 md:space-y-12 ">
+      {% include cta.html %}
+
+      {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    </div>
+  </div>
+
+  <div class="w-full pl-12 md:pt-10 md:w-4/12">
     {% if page.authors %}
       <div class="flex flex-col hidden mb-3 md:flex md:mb-6">
         {% for author in page.authors %}
@@ -25,38 +57,7 @@ layout: default
     <div class="hidden md:block">
       {% include related.html %}
     </div>
-  </div>
-
-  <div class="w-full space-y-6 md:space-y-12 md:w-9/12">
-    <!-- Titulo -->
-    {% include heading.html heading=page.title description=page.description align="center" date=page.date %}
-    <!-- Video o image  destacada -->
-    <div class="overflow-hidden transition duration-300 ease-in-out rounded-md shadow-2xl aspect-w-16 aspect-h-9 sm:flex sm:space-x-6 hover:shadow-lg">
-      {% assign youtubeId = post.youtubeId | strip_newlines %}
-      {% if page.youtubeId == ""  %}
-          <img class="object-cover w-full sm:rounded-xl " src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}" />
-          {% else %}
-          {% include youtubePlayer.html id=page.youtubeId %}
-      {% endif %}
-  </div>
-  {% if page.authors %}
-  <div class="flex flex-col pb-3 md:hidden">
-    {% for author in page.authors %}
-      {% include author-large.html
-        author=author
-      %}
-    {% endfor %}
-  </div>
-{% endif %}
-    <div class="prose prose-lg prose-yellow">
-      {{ content }}
-    </div>
-    <div class="space-y-6 md:space-y-12 md:w-10/12 ">
-      {% include cta.html %}
-
-      {% include disqus.html disqus_identifier=page.disqus_identifier %}
-    </div>
-  </div>
+  </div>  
 
 </div>
 
