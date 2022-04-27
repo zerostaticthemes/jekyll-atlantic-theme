@@ -7,32 +7,33 @@ layout: full-width
 
 <!-- Hero -->
 <h1 class="sr-only">{{ site.logo.logo_desktop_text }}</h1>
-<div class="md:-space-y-24 -space-y-12 ">
+<div class="md:-space-y-24 ">
 
 
-  <div class="bg-black py-12">
+  <div class="bg-black pb-16 pt-4 md:py-12">
     <div class="container px-6 mx-auto md:px-0">
-    <div class="flex flex-col justify-between mx-auto item lg:flex-row">
-        <div class="flex flex-col items-center justify-center md:w-1/2 ">
+    <div class="flex flex-col -space-y-16 space-y-reverse md:space-y-0  md:justify-between mx-auto item lg:flex-row">
+
+        <div class="flex flex-col items-center z-10 md:z-0 justify-center md:w-1/2 ">
             <div class="space-y-6">
                 <div class="space-y-6 text-white max-w-md" data-aos="fade-up" data-aos-delay="200">
-                    <h1 class="text-5xl font-bold tracking-wide ">Me alegro de que hayas pasado por aquí.</h1>
+                    <h1 class="md:text-5xl text-3xl font-bold tracking-wide ">Me alegro de que hayas pasado por aquí.</h1>
                     <p class="text-xl font-light ">Soy diseñador desde hace mas de 8 años, actualmente vivo en Auckalnd, Nueva Zelanda y cada vez que puedo hago videos o escribo sobre mi experiencia</p>
                     <div class="flex flex-row space-x-4">
-                    <a href="#portfolio" class="relative group">
-                        <div class="absolute inset-0 group-hover:-inset-4  bg-gradient-to-r from-yellow-500 to-pink-500 filter blur-2xl opacity-40 "></div>
-                        <span class="relative inline-flex items-center px-8 py-4 space-x-1 text-white group-hover:text-yellow-500 transition duration-500 rounded-xl shadow-xl hover:shadow bg-black ">View projects</span>
+                    <a href="/blog" class="relative group">
+                        <div class="absolute inset-0 group-hover:-inset-4  bg-gradient-to-r from-blue-500 to-green-500 filter blur-xl opacity-40 "></div>
+                        <span class="relative inline-flex items-center px-8 py-4 space-x-1 text-white group-hover:text-yellow-500 transition duration-500 border border-gray-800 rounded-xl shadow-xl hover:shadow bg-black ">Artículos</span>
                     </a>
-                    <a href="/about-en" class="inline-flex items-center px-3 py-2 space-x-1 text-white group-hover:text-yellow-500 bg-black transition duration-500 border border-gray-600 group-hover:border-white group-hover:border-2 rounded-xl shadow-xl hover:shadow ">
-                        <span>About me</span>
+                    <a href="/about" class="inline-flex items-center px-3 py-2 space-x-1 text-white z-10 group-hover:text-yellow-500 bg-black transition duration-500 border border-gray-800 group-hover:border-white group-hover:border-2 rounded-xl shadow-xl hover:shadow ">
+                        <span>Acerca de mí</span>
                     </a>
     
                     </div>
                 </div>
             </div>
         </div>
-        <div class="relative items-end justify-center hidden md:flex md:w-1/2 ">
-            <svg data-aos="fade-right" data-aos-delay="200" class="absolute text-gray-800 inset-0 object-cover "viewBox="0 0 452 341" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="relative items-end justify-center order-first md:order-last md:flex md:w-1/2 ">
+            <svg data-aos="fade-right" data-aos-delay="200" class="absolute hidden md:block text-gray-800 inset-0 object-cover "viewBox="0 0 452 341" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3" d="M415.982 38.4336H378.249V76.1668H415.982V38.4336Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
                 <path opacity="0.3" d="M415.982 189.367H378.249V227.1H415.982V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
                 <path opacity="0.3" d="M453.715 189.367H415.982V227.1H453.715V189.367Z" stroke="currentColor" stroke-dasharray="0.76 1.91"/>
@@ -88,8 +89,8 @@ layout: full-width
             </svg>
     
             <div data-aos="fade-left" class="relative flex max-w-lg ">
-                <div class="absolute bg-gradient-to-r from-yellow-500 to-pink-500 mx-28 my-24 transform -translate-y-12 rotate-6 opacity-30 filter blur-3xl rounded-full inset-0"></div>
-                <img src="../assets/img/profilepic.png" class="relative filter grayscale mt-12 backdrop-contrast-75 inset-0 object-cover " />
+                <div class="absolute  bg-gradient-to-r from-yellow-500 to-pink-500 mx-8 md:mx-28 md:my-24 my-12 transform animate-blob -translate-y-12 rotate-6 opacity-50 filter blur-3xl rounded-full inset-0"></div>
+                <img src="../assets/img/profilepic.png" class="relative filter grayscale md:mt-12 backdrop-contrast-75 inset-0 object-cover " />
             </div>
         </div>
     </div>
@@ -98,13 +99,13 @@ layout: full-width
 
 
   <div class="container space-y-8 mx-auto">
-    <main class="grid gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-4">
+    <main class="grid mx-4 sm:mx-0 gap-8 md:gap-16 py-6 md:py-6 md:grid-cols-4">
       <div class="group md:flex">
-        <a href="/blog" class="flex items-center align-middle transition duration-500 ease-in-out transform sm:rounded-xl rounded-lg group-hover:shadow-2xl shadow-xl group-hover:-translate-y-1 border border-gray-300 bg-white text-black ">
-          <div class="flex flex-col space-y-4 mx-auto p-12 ">
+        <a href="/blog" class="flex items-center align-middle transition duration-500 ease-in-out transform sm:rounded-xl rounded-lg group-hover:shadow-2xl md:shadow-xl group-hover:-translate-y-1 border border-gray-300 bg-white text-black ">
+          <div class="flex flex-col md:space-y-4 space-y-2 mx-auto py-2 md:p-12 ">
           <h3 class="text-2xl font-bold ">Revisa mis ultimos posts</h3>
           <div class="flex space-x-2 text-yellow-500 group-hover:text-red-500 items-center" >
-            <span class=" transition transform duration-200 ease-in-out no-underline  group-hover:underline">o visita mi blog</span>
+            <span class=" transition transform duration-200 ease-in-out no-underline  group-hover:underline">o visita el blog</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mt-1 transition duration-200 transform ease-in-out group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
             </svg>

@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  @apply antialiased;
 }
 
 @layer components {

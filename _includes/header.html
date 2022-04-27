@@ -27,7 +27,7 @@
                     </svg>
                 </button>
             </div>
-            <div :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 my-6 space-y-6 sm:space-y-0 md:pb-0 md:flex md:justify-end md:flex-row">
+            <div :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden items-center pb-4 my-6 space-y-6 sm:space-y-0 md:pb-0 md:flex md:justify-end md:flex-row">
             <!-- {% assign pages_list = site.pages | sort:"url" %}
             {% for node in pages_list %}
                 {% if node.title != null %}
@@ -42,6 +42,8 @@
             {% for item in site.data.menu.main %}
             <a class="px-4 py-2 btn hover:text-yellow-500" href="{{ item.url }}">{{ item.name }}</a>
             {% endfor %}
+
+            {% include icons.html %} 
             
             <!-- Menu desplegable -->
             <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
