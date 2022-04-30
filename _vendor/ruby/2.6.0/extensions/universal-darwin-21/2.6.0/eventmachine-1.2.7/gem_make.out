@@ -1,0 +1,17 @@
+current directory: /Users/arielcerda/Sites/jekyll-atlantic-theme/_vendor/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20220430-12905-1lazken.rb extconf.rb
+creating Makefile
+
+current directory: /Users/arielcerda/Sites/jekyll-atlantic-theme/_vendor/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/arielcerda/Sites/jekyll-atlantic-theme/_vendor/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+ld: warning: directory not found for option '-L/System/Volumes/Data/SWE/macOS/BuildRoots/b8ff8433dc/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.Internal.sdk/usr/local/lib'
+
+current directory: /Users/arielcerda/Sites/jekyll-atlantic-theme/_vendor/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20220430-12905-1x4frfl

@@ -8,11 +8,13 @@
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.6",
-    "postcss": "^8.3.6",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "tailwindcss": "^2.2.4"
   },
   "author": "rob@zerostatic.io",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.4.13"
+  }
 }

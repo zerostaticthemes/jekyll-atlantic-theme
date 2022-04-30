@@ -1,0 +1,8 @@
+sudo: false
+language: ruby
+rvm: 2.4
+cache: bundler
+
+#install: bundle install
+script:
+  - gem build ./jekyll-environment-variables.gemspec
