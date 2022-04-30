@@ -14,4 +14,5 @@ featureimg: /assets/img/2020/cdf/cover.png
 folderurl: /assets/img/pro/cdf
 videourl: /assets/img/video/cdf.mp4
 demolink:
+sitemap: false
 ---

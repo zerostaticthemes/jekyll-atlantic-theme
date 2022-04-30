@@ -14,4 +14,5 @@ featureimg: /assets/img/cover/md-cover.png
 folderurl: /assets/img/pro/md
 videourl: /assets/img/video/moviedates.mp4
 demolink: https://moviedate.netlify.app/
+sitemap: false
 ---

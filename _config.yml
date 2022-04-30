@@ -43,10 +43,13 @@ social:
     - https://www.instagram.com/smilesharks/
     - https://www.youtube.com/channel/UCWip2TrjNMXb0kg6LWbsNzw
 
+url: "https://www.arielcerda.com/" # the base hostname & protocol for your site
+
 plugins:
   - jekyll-environment-variables
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-sitemap
 
 paginate: 7
 paginate_path: /blog/page:num/
@@ -61,22 +64,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-
-# defaults:
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: post
-#   - scope:
-#       path: "images"
-#     values:
-#       image: true
-#   - scope:
-#       path: "categories"
-#     values:
-#       layout: category
-#       permalink: /category/:basename/
 
 exclude:
   - Gemfile

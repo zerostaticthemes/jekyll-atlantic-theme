@@ -17,10 +17,8 @@ folderurl: /assets/img/pro/tm
 # 	- https://www.facebook.com/watch/?v=1540706666068335&t=1
 demolink: https://www.facebook.com/116113605078452/videos/564315950781361
 facebookId:
-  -
-    video: "1540706666068335"
-  -
-    video: "1261434754048903"
-  -
-    video: "564315950781361"
+  - video: "1540706666068335"
+  - video: "1261434754048903"
+  - video: "564315950781361"
+sitemap: false
 ---

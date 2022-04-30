@@ -14,4 +14,5 @@ featureimg: /assets/img/2020/fc/cover.png
 folderurl: /assets/img/pro/fc
 videourl:
 demolink:
+sitemap: false
 ---
