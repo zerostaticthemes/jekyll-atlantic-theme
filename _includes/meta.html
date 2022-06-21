@@ -1,7 +1,7 @@
 <title>
   {% if page.meta_title %}
     {{ page.meta_title }}
-  {% elsif page.title %}
+    {% elsif page.title %}
     {{ page.title }}
     -
     {{ site.title}}
@@ -12,17 +12,18 @@
 
 {% if page.meta_description %}
   <meta name="description" content="{{ page.meta_description }}"/>
-{% elsif page.description %}
+  {% elsif page.description %}
   <meta name="description" content="{{ page.description }}"/>
 {% endif %}
 
-{% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>{% else %}<meta property="og:title" content="{{ page.title }}"/>
+{% if page.meta_title %}<meta property="og:title" content="{{ page.meta_title }}"/>
+{% else %}<meta property="og:title" content="{{ page.title }}"/>
 {% endif %}
 <meta content="website" property="og:type"/>
 <meta property="og:url" content="{{ page.url }}"/>
 {% if page.image %}
   <meta property="og:image" content="{{ page.image | absolute_url }}"/>
-{% elsif site.seo.meta_og_image %}
+  {% elsif site.seo.meta_og_image %}
   <meta property="og:image" content="{{ site.seo.meta_og_image | absolute_url }}"/>
 {% endif %}
 {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>

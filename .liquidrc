@@ -1,24 +1,15 @@
 {
   "ignore": [
     {
-      "type": "liquid",
-      "begin": "comment",
-      "end": "endcomment"
-    },
-    {
-      "type": "html",
-      "begin": "script",
-      "end": "script"
-    },
-    {
-      "type": "html",
-      "begin": "style",
-      "end": "style"
+      "type": "",
+      "begin": "",
+      "end": ""
     }
   ],
   "html": {
-    "correct": true,
+    "correct": false,
     "force_attribute": false,
+    "braces": false,
     "preserve": 2,
     "unformatted": false
   },
@@ -46,9 +37,8 @@
   },
   "json": {
     "preserve": 0,
-    "format_array": "indent",
-    "braces": true,
-    "no_semicolon": true,
-    "brace_block": false
+    "braces": false,
+    "brace_block": true,
+    "no_semicolon": true
   }
 }
