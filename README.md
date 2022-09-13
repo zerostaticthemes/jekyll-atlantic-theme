@@ -1,12 +1,12 @@
-# Jekyll Atlantic - Jekyll + Tailwind Theme
+# Jekyll Atlantic - Jekyll + Tailwind Starter Theme
 
-Atlantic is a Jekyll blog theme. It is a Jeyll + Tailwind starter template. It shows best practices for using Tailwind with Jekyll.
+Atlantic is a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
 
 [Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
 
 ![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
-### Theme features
+## Theme features
 
 <img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
 <img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
