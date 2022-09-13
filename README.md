@@ -1,11 +1,8 @@
-# Jekyll Atlantic - A Jekyll Tailwind Theme
+# Jekyll Atlantic - Jekyll + Tailwind Theme
 
-Atlantic is a Jekyll Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
+Atlantic is a Jekyll blog theme. It is a Jeyll + Tailwind starter template. It shows best practices for using Tailwind with Jekyll.
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | 
-[Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
-
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
 
 ![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
 
@@ -96,7 +93,11 @@ For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme wo
 
 ### Other Jekyll Themes by Zerostatic
 
-- [Jekyll Serif](https://github.com/zerostaticthemes/jekyll-serif-theme)
-- [Jekyll Advance](https://www.zerostatic.io/theme/jekyll-advance/)
+- [Jekyll Serif](https://github.com/zerostaticthemes/jekyll-serif-theme) - Open Source
+- [Jekyll Advance](https://www.zerostatic.io/theme/jekyll-advance/) - Premium
+- [Jekyll Curate](https://github.com/zerostaticthemes/jekyll-curate) - Premium
+- [Jekyll Origin](https://www.zerostatic.io/theme/jekyll-origin/) - Premium
 
 🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
+
+<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
