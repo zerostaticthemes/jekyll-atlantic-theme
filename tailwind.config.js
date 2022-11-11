@@ -15,15 +15,14 @@ module.exports = {
             transparent: 'transparent',
             current: 'currentColor',
             orange: '#e9a881',
-            amber: colors.amber
+            amber: colors.amber,
             black: colors.black,
             white: colors.white,
             gray: colors.trueGray,
             indigo: colors.indigo,
             red: colors.rose,
-            yellow: colors.amber,
             green: colors.emerald,
-        }
+        },
     },
     variants: {
         extend: {
