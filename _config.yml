@@ -13,8 +13,8 @@ sass:
 google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
-  logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: "Jekyll <strong>Atlantic</strong>"
+  logo_desktop_image: assets/images/logo/logo.jpg
+  logo_desktop_text: "<strong>KlaWo Blog</strong>"
   logo_mobile_image: assets/images/logo/logo-mobile.svg
   logo_mobile_text: ""
   logo_desktop_height: "36px"
