@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include heading.html heading=page.title description=page.description align="center" date=page.date %}
-
 {% if page.authors %}
   <div class="flex flex-col pb-3 md:hidden">
     {% for author in page.authors %}
@@ -37,11 +35,17 @@ layout: default
   </div>
 
   <div class="w-full md:w-9/12">
-    <div class="prose">
-      {{ content }}
-    </div>
+      <div class="prose">
+          <div class="py-6 md:py-12 md:text-center mx-auto">
+              <div class="font-medium text-gray-700">{{page.date}}</div>
+              <h1 class="heading text-2xl md:text-4xl font-bold font-sans md:leading-tight">
+                {{page.title}}
+              </h1>
+              <h2 class="text-xl text-gray-600 mt-2">{{page.description}}</h2>
+          </div>
+          {{ content }}
+      </div>
   </div>
-
 </div>
 
 {% if page.categories %}
