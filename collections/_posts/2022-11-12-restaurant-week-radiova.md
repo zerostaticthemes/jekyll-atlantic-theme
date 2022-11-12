@@ -8,7 +8,7 @@ tags: ["Writing"]
 description: "Restaurant Week - restauracja Radiova Bistro&Cafe Kraków, recenzja menu festiwalowego. KlaWo Blog. Klaudia Juśko. Wojciech Szlosek."
 thumbnail: "assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg"
 ---
-
+<style>body {text-align: justify}</style>
 Po powrocie ze słonecznej Sycylii szybko zaczęliśmy tęsknić za dobrym jedzeniem. Małe pocieszenie 
 stanowił jednak fakt, że od dawna mieliśmy już zakupione wejściówki na kolejną edycję festiwalu 
 Restaurant Week. Jest to już nasza druga edycja tego festiwalu - podczas edycji wiosennej spodobało 
