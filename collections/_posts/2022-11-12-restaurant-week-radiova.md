@@ -67,4 +67,4 @@ okazało się, że smak jest równie dobry.
 
 <img width="451" alt="Zrzut ekranu 2022-11-5 o 12 28 43" src="https://user-images.githubusercontent.com/53795852/201471575-4fcecc9a-7af4-4dbb-8115-e24dd19c2410.png">
 
-![image](assets/images/posts/2022-11-12-restaurant-week-radiova/oak.png?raw=true)
+![image](/assets/images/posts/2022-11-12-restaurant-week-radiova/oak.png?raw=true)
