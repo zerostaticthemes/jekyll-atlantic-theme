@@ -16,7 +16,7 @@ nam się na tyle, że od razu kupiliśmy w promocyjnej cenie bilety na jesień. 
 był to strzał w dziesiątkę, ponieważ inflacja zawitała też na Restaurant Week i cena za osobę od tego czasu
 wzrosła.
 
-### Restaurant Week
+## Restaurant Week
 
 Czym jest tak właściwie Restaurant Week? Jest to festiwal, w którym biorą udział dziesiątki 
 restauracji z całej Polski. Każda z restauracji przygotowuje na czas festiwalu specjalne menu, 
@@ -32,7 +32,7 @@ na Al. Słowackiego. Wcześniej nie słyszeliśmy o nim zbyt wiele, jednak do re
 atrakcyjne menu przedstawione na stronie festiwalu. Ponieważ nasze gusta smakowe zwykle mocno się różnią
 zdecydowaliśmy się na dwie różne wersje menu.
 
-#### Menu A (Klaudia)
+### Menu A (Klaudia)
   - **Przystawka**: Tatar z marynowanych warzyw z krewetkami
   - **Danie główne**: Pieczony ser Brie z malinami i orzechami włoskimi z sosem figowym
   - **Deser**: Ciasto marchewkowe z sosem waniliowym i owocami
@@ -47,7 +47,7 @@ siebie i nie trafiła kompletnie w moje gusta. Skończyłam przystawkę lekko ro
 nie tracąc nadziei, że danie główne mnie zachwyci.
 
 
-![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-przystawka.jpg?raw=true)
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/A-przystawka.jpg?raw=true)
 
 Jestem fanką serów wszelakich, więc musiałaby nastąpić prawdziwa katastrofa, żebym oceniła negatywnie
 kolejne danie. Na szczęście nic takiego się nie stało, a pieczony ser Brie w sosie figowym, z dużą ilością 
@@ -55,16 +55,33 @@ orzechów i malinami sprawił, że szybko zapomniałam o rozczarowującej przyst
 składniki komponowały się ze sobą idealnie. Mnie danie zachwyciło, jednak pewnie nie każdemu przypadłoby
 do gustu jako danie główne z tego względu, że całość była bardzo słodka i smakowała niemal jak deser.
 
-![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg?raw=true)
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg?raw=true)
 
 Gdy wyrzuciłam z pamięci nieszczęsną przystawkę, było już tylko lepiej. Po uczcie serowej na stole pojawiło
 się ciasto marchewkowe oblane gorącym sosem waniliowym. Sposób podania cieszył oko, a po spróbowaniu
 okazało się, że smak jest równie dobry.
 
-![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-deser.jpg?raw=true)
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/A-deser.jpg?raw=true)
 
-## Testuję zdjęcia w poście:
 
-<img width="451" alt="Zrzut ekranu 2022-11-5 o 12 28 43" src="https://user-images.githubusercontent.com/53795852/201471575-4fcecc9a-7af4-4dbb-8115-e24dd19c2410.png">
+### Menu B (Wojtek)
+  - **Przystawka**: Ptyś z szarpaną wołowiną z sosem grzybowym
+  - **Danie główne**: Pierś z kurczaka faszerowana szynką parmeńską i suszonymi pomidorami, sos truflowy, puree z selera
+  - **Deser**: Tiramisu truskawkowe
+  - **Koktajl**: Martini (alkoholowy)
 
-![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/oak.png?raw=true)
+
+Na początek otrzymaliśmy drinki głównego sponsora festiwalu - Martini. Słodko-gorzki koktajl z dużą ilością lodu, sprawdziłby się jeszcze lepiej w upalny wieczór.
+
+Moja przystawka wyglądała naprawdę dobrze, była bardzo elegancko podana; całość na zimno. Danie było niewielkie i zniknęło bardzo szybko - smakowo jednak było "tylko" dobrze. Chrupki ptyś, lekko niedoprawione mięso, bardzo dobry sos grzybowy i niewiadoma posypka (może pistacje?), która nie dodawała żadnego konkretnego smaku. Niecierpliwie czekałem na danie główne.
+
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/B-przystawka.jpg?raw=true)
+
+Danie główne było już nieco większe i wyglądało również ładnie. Kurczak był soczysty, lecz niezbyt wyrazisty mimo intensywnego farszu. Puree z selera nie poprawiło sytuacji. Całość jednak była po prostu smaczna. Szkoda, że tak standardowa, żeby nie powiedzieć - trochę nudna.
+
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/B-danie.jpg?raw=true)
+
+Po chwili przyszły desery. Jestem ogromnym fanem tiramisu, więc szczerze mówiąc to na właśnie deser czekałem najmocniej. Wersja włoskiego klasyku z Radiovej była lekko niestandardowa, bo truskawkowa. Truskawki były również między warstwami przysmaku.
+Bardzo mi to smakowało, nie za słodka masa, lekki posmak owoców i kawy. Pyszności. Uważam, że był to najlepszy punkt wieczoru. Żałuję jedynie, że porcja była tak niewielka - dotyczy to w sumie nie tylko deseru, ale wszystkich dań z menu.
+
+![image](../../assets/images/posts/2022-11-12-restaurant-week-radiova/B-deser.jpg?raw=true)
