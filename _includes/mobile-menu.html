@@ -10,7 +10,7 @@
   </div>
   <div class="flex flex-col text-center text-white text-2xl font-bold">
     {% for item in site.data.menu.main %}
-    <a class="py-2" href="{{ item.url }}">{{ item.name }}</a>
+    <a class="py-2" href="{{ item.url | relative_url }}">{{ item.name }}</a>
     {% endfor %}
   </div>
 </div>
