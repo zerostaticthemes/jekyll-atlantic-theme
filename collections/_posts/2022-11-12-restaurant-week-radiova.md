@@ -2,11 +2,11 @@
 layout: post
 title: "Restaurant Week - Radiova"
 date: 2018-12-29T10:26:40+10:00
-authors: ["Klaudia Jusko", "Wojciech Szlosek"]
+authors: ["Klaudia Jusko", "Wojtek Szlosek"]
 categories: ["RestaurantWeek", "Kraków"]
 tags: ["Writing"]
 description: ""
-thumbnail: "assets/images/unsplash-CTivHyiTbFw-640x360.jpeg"
+thumbnail: "assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg"
 ---
 
 Po powrocie ze słonecznej Sycylii szybko zaczęliśmy tęsknić za dobrym jedzeniem. Małe pocieszenie 
@@ -47,7 +47,7 @@ siebie i nie trafiła kompletnie w moje gusta. Skończyłam przystawkę lekko ro
 nie tracąc nadziei, że danie główne mnie zachwyci.
 
 
-![image](assets/images/posts/2022-11-12-restaurant-week-radiova/A-przystawka.jpg)
+![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-przystawka.jpg?raw=true)
 
 Jestem fanką serów wszelakich, więc musiałaby nastąpić prawdziwa katastrofa, żebym oceniła negatywnie
 kolejne danie. Na szczęście nic takiego się nie stało, a pieczony ser Brie w sosie figowym, z dużą ilością 
@@ -55,11 +55,11 @@ orzechów i malinami sprawił, że szybko zapomniałam o rozczarowującej przyst
 składniki komponowały się ze sobą idealnie. Mnie danie zachwyciło, jednak pewnie nie każdemu przypadłoby
 do gustu jako danie główne z tego względu, że całość była bardzo słodka i smakowała niemal jak deser.
 
-![image](assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg)
+![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-danie.jpg?raw=true)
 
 Gdy wyrzuciłam z pamięci nieszczęsną przystawkę, było już tylko lepiej. Po uczcie serowej na stole pojawiło
 się ciasto marchewkowe oblane gorącym sosem waniliowym. Sposób podania cieszył oko, a po spróbowaniu
 okazało się, że smak jest równie dobry.
 
-![image](assets/images/posts/2022-11-12-restaurant-week-radiova/A-deser.jpg)
+![image](https://github.com/KlaWo-Blog/dev/blob/master/assets/images/posts/2022-11-12-restaurant-week-radiova/A-deser.jpg?raw=true)
 
