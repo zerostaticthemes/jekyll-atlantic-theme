@@ -1,6 +1,6 @@
 baseurl: "/dev/"
 permalink: pretty
-title: ""
+title: "KlaWo Blog"
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
