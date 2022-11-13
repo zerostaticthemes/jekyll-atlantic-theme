@@ -66,7 +66,7 @@ Bardzo mi to smakowało, nie za słodka masa, lekki posmak owoców i kawy. Pyszn
 
 ## Podsumowanie
 
-Myśle, że można powiedzieć, że z Radiovej wyszliśmy tego wieczoru z mieszanymi uczuciami. Z jednej strony desery oraz jedno z dań głównych były naprawdę dobre, z drugiej - pozostałe dania pozostawiły lekki niedosyt. Ostatecznie był to jednak dla nas miło spędzony wieczór. Warto podkreślić, że Radiovej nie można oceniać do końca w kategoriach restauracji - jak sama nazwa wskazuje jest to bardziej bistro/kawiarnia, o czym świadczą też godziny otwarcia (8.00 - 19.00). W regularnej ofercie dominują tutaj zestawy lunchowe i śniadania, dlatego jest to dość oryginalny punkt na mapie festiwalowej, z czego zdawaliśmy sobie wcześniej sprawę. Podsumowując, miejsce nie wzbudziło w nas przesadnego zachwytu, ale wizytę w Radiovej oceniamy umiarkowanie pozytywnie. 
+Z Radiovej wyszliśmy tego wieczoru z mieszanymi uczuciami. Z jednej strony desery oraz jedno z dań głównych były naprawdę dobre, z drugiej - pozostałe dania pozostawiły lekki niedosyt. Ostatecznie był to jednak dla nas miło spędzony wieczór. Warto podkreślić, że Radiovej nie można oceniać do końca w kategoriach restauracji - jak sama nazwa wskazuje jest to bardziej bistro/kawiarnia, o czym świadczą też godziny otwarcia (8.00 - 19.00). W regularnej ofercie dominują tutaj zestawy lunchowe i śniadania, dlatego jest to dość oryginalny punkt na mapie festiwalowej, z czego zdawaliśmy sobie wcześniej sprawę. Na plus oceniamy bardzo miłą i uprzejmą obsługę lokalu. Podsumowując, miejsce nie wzbudziło w nas przesadnego zachwytu, ale wizytę w Radiovej oceniamy umiarkowanie pozytywnie.
 
 
 **Miejsce**: Radiova Bistro & Cafe
