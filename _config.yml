@@ -1,6 +1,6 @@
 baseurl: "/dev/"
 permalink: pretty
-title: "Jekyll Atlantic"
+title: ""
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
