@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Jekyll Atlantic Theme
-heading: <em>Jekyll Tailwind</em> Starter Blog
+title: KlaWo Blog
+heading: <em>KlaWo Blog</em>
 description: KlaWo - Klaudia i Wojtek - sprawdzamy restauracje, recenzujemy jedzenie i świetnie się przy tym bawimy!
 
 ---
