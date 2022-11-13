@@ -19,8 +19,8 @@ logo:
   logo_mobile_text: ""
   logo_desktop_height: "72px"
   logo_desktop_width: "72px"
-  logo_mobile_height: "36px"
-  logo_mobile_width: "36px"
+  logo_mobile_height: "72px"
+  logo_mobile_width: "72px"
 
 seo:
   meta_twitter_site: "@zerostaticio"
