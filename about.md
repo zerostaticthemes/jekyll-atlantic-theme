@@ -18,17 +18,16 @@ Klaudia i Wojtek, czyli dwójka młodych ludzi mieszkających na co dzień w Kra
 
 <div class="column">
 
-![Avatar](assets/images/author/klaudia-jusko.jpg#avatar)
+![image](../../assets/images/author/klaudia-jusko.jpg?raw=true#avatar)
 <p align="center"><b>Klaudia</b></p>
 </div>
-
 <br style="clear:both;"/>
 
 Damska część KlaWo stawia raczej na klasyczne pozycje w menu. Na jej talerzu zobaczycie najczęściej makarony, sałatki i pizzę, którą mogłaby jeść codziennie. Kocha włoskie przysmaki i zdecydowanie zbyt często ma ochotę na coś słodkiego. Jak łatwo się domyślić, jedyne desery których nie lubi, to akurat te, które lubi Wojtek. Nienawidzi kawy, za to jest w stanie wypić hektolitry herbaty każdego rodzaju. Sceptycznie podchodzi do kulinarnych eksperymentów, jednak czasem udaje się ją namówić na coś szalonego.
 
 <div class="column">
 
-![Avatar](https://wszlosek.github.io/website/photo.jpg#avatar)
+![image](https://wszlosek.github.io/website/photo.jpg?raw=true#avatar)
 <p align="center"><b>Klaudia</b></p>
 </div>
 <br style="clear:both;"/>
