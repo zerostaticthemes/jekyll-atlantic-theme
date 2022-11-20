@@ -11,7 +11,7 @@ permalink: "/about/"
 
 KlaWo to blog, który powstał z pasji do dobrego jedzenia i odkrywania nowych smaków. Odwiedzamy restauracje, kawiarnie oraz wszystkie inne miejsca, w których można dobrze zjeść i dzielimy się z Wami naszymi subiektywnymi recenzjami i wskazówkami.
 
-#### Kto tworzy KlaWo?
+### Kto tworzy KlaWo?
 
 Klaudia i Wojtek, czyli dwójka młodych ludzi mieszkających na co dzień w Krakowie, którzy lubią umilać sobie życie polując na najlepsze doznania smakowe. Kulinarnie bywają całkowitymi przeciwieństwami, dzięki czemu zobaczycie tutaj dużą różnorodość potraw.
 
