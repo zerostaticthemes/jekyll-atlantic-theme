@@ -18,7 +18,7 @@ Klaudia i Wojtek, czyli dwójka młodych ludzi mieszkających na co dzień w Kra
 
 <div class="column">
 
-![Avatar](assets/images/author/klaudia-jusko.jpg#avatar)
+![avatar](assets/images/author/klaudia-jusko.jpg#avatar)
 <p align="center"><b>Klaudia</b></p>
 </div>
 
@@ -28,26 +28,8 @@ Damska część KlaWo stawia raczej na klasyczne pozycje w menu. Na jej talerzu 
 
 <div class="column">
 
-![Avatar](https://wszlosek.github.io/website/photo.jpg#avatar)
-<p align="center"><b>Klaudia</b></p>
-</div>
-<br style="clear:both;"/>
+![avatar](https://wszlosek.github.io/website/photo.jpg#avatar)
 
 Uwielbia niekonwencjonalne połączenia i kulinarne eksperymenty. Kocha nieoczywistości, ale i tak często wraca do sprawdzonych klasyków m.in. z kuchni włoskiej, polskiej i środziemnomorskiej. Nie wyobraża sobie dnia bez filiżanki kawy, a czas umila sobie często gotowaniem w domu. Fan mięsa, ryb i owoców morza, raczej nie znajdziecie u niego dań wege.
-
-<style>
-img[src$="#avatar"] {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  max-width: 100%;
-}
-
-.column {
-  float: left;
-  width: 20%;
-}
-}
-</style>
 
 
