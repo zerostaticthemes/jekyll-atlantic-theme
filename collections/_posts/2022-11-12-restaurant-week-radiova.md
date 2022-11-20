@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "Restaurant Week - Radiova"
-date: 2018-12-29T10:26:40+10:00
+date: 2022-11-12T10:26:40+10:00
 authors: ["Klaudia Jusko", "Wojtek Szlosek"]
 categories: ["RestaurantWeek", "Kraków"]
 tags: ["Writing"]
