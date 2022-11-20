@@ -15,10 +15,9 @@ KlaWo to blog, który powstał z pasji do dobrego jedzenia i odkrywania nowych s
 
 Klaudia i Wojtek, czyli dwójka młodych ludzi mieszkających na co dzień w Krakowie, którzy lubią umilać sobie życie polując na najlepsze doznania smakowe. Kulinarnie bywają całkowitymi przeciwieństwami, dzięki czemu zobaczycie tutaj dużą różnorodość potraw.
 
-
 <div class="column">
 
-![avatar](assets/images/author/klaudia-jusko.jpg#avatar)
+<img src = "https://github.com/KlaWo-Blog/dev/blob/master/assets/images/author/klaudia-jusko.jpg?raw=true" class = "rounded-img"/>
 <p align="center"><b>Klaudia</b></p>
 </div>
 
@@ -28,8 +27,29 @@ Damska część KlaWo stawia raczej na klasyczne pozycje w menu. Na jej talerzu 
 
 <div class="column">
 
-![avatar](https://wszlosek.github.io/website/photo.jpg#avatar)
+![image](https://wszlosek.github.io/website/photo.jpg?raw=true#avatar)
+<p align="center"><b>Wojtek</b></p>
+</div>
+
+<br style="clear:both;"/>
+
 
 Uwielbia niekonwencjonalne połączenia i kulinarne eksperymenty. Kocha nieoczywistości, ale i tak często wraca do sprawdzonych klasyków m.in. z kuchni włoskiej, polskiej i środziemnomorskiej. Nie wyobraża sobie dnia bez filiżanki kawy, a czas umila sobie często gotowaniem w domu. Fan mięsa, ryb i owoców morza, raczej nie znajdziecie u niego dań wege.
 
 
+<style>
+.rounded-img{
+border-radius: 50%;
+}
+
+img[src$="#avatar"] {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.column {
+  float: left;
+  width: 20%;
+}
+</style>
