@@ -18,5 +18,6 @@ Damska część KlaWo stawia raczej na klasyczne pozycje w menu. Na jej talerzu 
 
 
 **Wojtek**
-XDXD wątróbkożerca XDXD
+
+Uwielbia niekonwencjonalne połączenia i kulinarne eksperymenty. Kocha nieoczywistości, ale i tak często wraca do sprawdzonych klasyków m.in. z kuchni włoskiej, polskiej i środziemnomorskiej. Nie wyobraża sobie dnia bez filiżanki kawy, a czas umila sobie często gotowaniem w domu. Fan mięsa, ryb i owoców morza, raczej nie znajdziecie u niego dań wege.
 
