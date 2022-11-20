@@ -52,4 +52,14 @@ img[src$="#avatar"] {
   float: left;
   width: 20%;
 }
+
+.prose img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.prose p{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 </style>
