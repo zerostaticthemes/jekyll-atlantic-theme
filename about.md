@@ -33,7 +33,7 @@ Uwielbia niekonwencjonalne połączenia i kulinarne eksperymenty. Kocha nieoczyw
 </div>
 <div class="col-img">
 <img src = "https://wszlosek.github.io/website/photo.jpg?raw=true" class = "rounded-img"/>
-<p align="center"><b>Klaudia</b></p>
+<p align="center"><b>Wojtek</b></p>
 </div>
 </div>
 <br style="clear:both;"/>
