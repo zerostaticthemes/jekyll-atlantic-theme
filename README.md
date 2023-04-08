@@ -33,6 +33,8 @@ Atlantic is a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll 
 
 ## Installation
 
+To use this theme you can download or clone it, adjust _config.yml, add posts to collections/_posts etc.
+
 ### Installing Ruby & Jekyll
  
 If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
