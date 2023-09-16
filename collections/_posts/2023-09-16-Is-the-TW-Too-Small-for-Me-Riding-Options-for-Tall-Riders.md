@@ -1,9 +1,9 @@
 ---
-title: "s the TW Too Small for Me? Riding Options for Tall Riders"
+title: "Is the TW Too Small for Me? Riding Options for Tall Riders"
 date: 2023-12-20T09:49:03+10:00
 layout: post
 categories: ["Branding"]
-description: Branding is an intrinsic part of your companies success, learn why your brand matters.
+description: If you're a tall rider like me, standing at an impressive 6'2" with a 34" inseam, you might find yourself wondering if the TW (Yamaha TW200) is the right bike for you. Fear not, my fellow vertically gifted friends, because I have some good news for you.
 thumbnail: "https://source.unsplash.com/YmQ0-nmWcV0/640x360"
 image: "https://source.unsplash.com/YmQ0-nmWcV0/1600x900"
 ---
