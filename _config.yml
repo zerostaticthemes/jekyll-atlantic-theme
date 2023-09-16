@@ -1,4 +1,4 @@
-baseurl: "/"
+baseurl: "/jekyll-atlantic-theme/"
 permalink: pretty
 title: "Jekyll Atlantic"
 collections_dir: collections
