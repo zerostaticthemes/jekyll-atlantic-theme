@@ -5,7 +5,7 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   "[json]": {
     "editor.formatOnSave": true,
@@ -15,7 +15,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": false
+      "source.fixAll.eslint": "never"
     }
   },
   "search.exclude": {
