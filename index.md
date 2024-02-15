@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Jekyll Atlantic Theme
-heading: <em>Jekyll Tailwind</em> Starter Blog
-description: Atlantic is a beautiful Tailwind CSS theme for Jekyll. It shows best practices for using Tailwind with Jekyll.
+title: Church History
+heading: <em>Church</em> History
+description: Check out our website to dive into the fascinating history of the Church. We cover everything from the earliest days to what's happening now. Learn about important people, key events, and how Christianity has evolved over time. Our site features easy-to-read articles, interactive timelines, and engaging videos to help you explore and enjoy the journey of the Church in modern times.
 
 ---
